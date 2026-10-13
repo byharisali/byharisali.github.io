@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b14">
+<meta name="author" content="Haris Ali">
+<title>Haris Ali Studio | Graphic designer and print specialist, Dubai</title>
+<meta name="description" content="Haris Ali: graphic designer and print specialist in Deira, Dubai. Logos, posters, signage, print and websites across the UAE.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orange-salmon-483645.hostingersite.com/">
+<meta property="og:title" content="Haris Ali Studio | Graphic designer and print specialist, Dubai">
+<meta property="og:description" content="Logos, posters, signage, print products and websites. WhatsApp +971 50 566 2452.">
+<meta property="og:image" content="https://orange-salmon-483645.hostingersite.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://orange-salmon-483645.hostingersite.com/img/og.png">
+<link rel="icon" type="image/png" href="img/logo-mark.png">
+<link rel="apple-touch-icon" href="img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Mrs+Saint+Delafield&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Reem+Kufi:wght@600&display=swap">
+<style>
+/* Layout: a dark stage. The hero is a real 3D scene (extruded DESIGNER lettering, portrait, orbit ring, floating glass cards) that follows the pointer. Below it, tilt-on-hover cards and extruded headings keep the same depth language. */
+:root {
+  --bg: #070b14;
+  --bg-2: #0a0d22;
+  --card: #101827;
+  --line: rgba(240, 205, 130, .2);
+  --fg: #f7f4ec;
+  --muted: #aeb7cd;
+  --accent: #d9a441;
+  --accent-2: #f0cd82;
+  --teal: #2fd0b5; --c: #00b4e6; --m: #ff2d95; --y: #ffd400;
+  --display: "Anton", "Arial Narrow", Impact, sans-serif;
+  --script: "Mrs Saint Delafield", "Brush Script MT", cursive;
+  --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --kufi: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--fg);
+  background-image: radial-gradient(1100px 600px at 50% -10%, #12304a 0%, rgba(7,11,20,0) 70%), radial-gradient(800px 500px at 100% 40%, rgba(47,208,181,.13), rgba(7,11,20,0) 70%);
+  background-repeat: no-repeat;
+  font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-inline: clamp(16px, 4vw, 48px); padding-block: 0 32px;
+  -webkit-font-smoothing: antialiased; overflow-x: clip;
+}
+a { color: inherit; }
+p { margin: 0; }
+:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1160px; margin-inline: auto; }
+.mono { font-family: var(--mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+h2, h3 { font-family: var(--display); font-weight: 400; text-transform: uppercase; margin: 0; line-height: .95; letter-spacing: .01em; text-wrap: balance; }
+
+/* Extruded type made of stacked shadows */
+.ext { color: #fff; text-shadow: 0.008em 0.011em 0 rgb(255,233,168), 0.017em 0.022em 0 rgb(240,217,154), 0.025em 0.033em 0 rgb(225,202,140), 0.033em 0.044em 0 rgb(210,186,125), 0.041em 0.055em 0 rgb(195,170,111), 0.050em 0.066em 0 rgb(180,155,97), 0.058em 0.077em 0 rgb(165,139,83), 0.066em 0.088em 0 rgb(150,124,69), 0.074em 0.099em 0 rgb(135,108,55), 0.082em 0.110em 0 rgb(120,92,40), 0.091em 0.121em 0 rgb(105,77,26), 0.099em 0.132em 0 rgb(90,61,12), 0 0 .3em rgba(224,168,60,.35); }
+.ext-m { color: var(--accent-2); text-shadow: 0.008em 0.011em 0 rgb(217,164,65), 0.017em 0.022em 0 rgb(199,150,58), 0.025em 0.033em 0 rgb(182,136,52), 0.033em 0.044em 0 rgb(164,122,45), 0.041em 0.055em 0 rgb(146,108,38), 0.050em 0.066em 0 rgb(129,94,32), 0.058em 0.077em 0 rgb(111,80,25), 0.066em 0.088em 0 rgb(93,66,18), 0.074em 0.099em 0 rgb(76,52,12), 0.082em 0.110em 0 rgb(58,38,5), 0 0 .3em rgba(224,168,60,.3); }
+
+/* Header */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; margin-inline: calc(-1 * clamp(16px, 4vw, 48px)); padding-inline: clamp(16px, 4vw, 48px); background: rgba(7,11,20,.72); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.brand { font-family: var(--display); font-size: 1.6rem; text-transform: uppercase; text-decoration: none; letter-spacing: .03em; display: flex; align-items: center; gap: 10px; line-height: 1; }
+.brand i { display: grid; grid-template-columns: 1fr 1fr; width: 18px; height: 18px; gap: 2px; transform: rotate(45deg); }
+.brand i b { display: block; border-radius: 2px; }
+.brand i b:nth-child(1) { background: var(--c); } .brand i b:nth-child(2) { background: var(--m); }
+.brand i b:nth-child(3) { background: var(--y); } .brand i b:nth-child(4) { background: #fff; }
+nav { display: flex; gap: 22px; align-items: center; }
+nav a { font-family: var(--mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; text-decoration: none; color: var(--muted); }
+nav a:hover { color: #fff; }
+nav a.cta { color: #1a1205; font-weight: 600; background: linear-gradient(180deg, #f8e3a0, #d9a441 60%, #b8801f); padding: 9px 16px; border-radius: 999px; box-shadow: 0 6px 24px rgba(224,168,60,.4), inset 0 1px 0 rgba(255,255,255,.55); }
+nav a.cta:hover { color: #1a1205; filter: brightness(1.08); }
+@media (max-width: 720px) { nav a:not(.cta) { display: none; } }
+
+/* Hero stage */
+.hero { padding-top: clamp(20px, 4vw, 48px); }
+.hero .kicker { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+.stage { position: relative; perspective: 1400px; height: clamp(500px, 76vw, 800px); margin-top: 8px; }
+.scene, .tilt { position: absolute; inset: 0; transform-style: preserve-3d; }
+.tilt { transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); will-change: transform; }
+.glow { position: absolute; left: 50%; top: 34%; width: min(78%, 640px); aspect-ratio: 1; transform: translate(-50%, -50%) translateZ(-120px); background: radial-gradient(circle, rgba(224,168,60,.55) 0%, rgba(224,168,60,.18) 40%, rgba(224,168,60,0) 68%); filter: blur(10px); }
+.orbit { position: absolute; left: 50%; top: 34%; width: min(86%, 700px); aspect-ratio: 1; transform: translate(-50%, -50%) translateZ(-40px) rotateX(74deg); transform-style: preserve-3d; }
+.ring { position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid rgba(240,205,130,.55); box-shadow: 0 0 30px rgba(224,168,60,.35), inset 0 0 30px rgba(224,168,60,.2); animation: spin 18s linear infinite; }
+.ring.b { inset: 9%; border-style: dashed; border-color: rgba(255,255,255,.28); box-shadow: none; animation-duration: 26s; animation-direction: reverse; }
+.ring span { position: absolute; width: 22px; height: 22px; margin: -11px; border-radius: 50%; }
+.ring span:nth-child(1) { left: 50%; top: 0; background: radial-gradient(circle at 32% 28%, #8defff, var(--c) 55%, #006a8c); box-shadow: 0 0 18px var(--c); }
+.ring span:nth-child(2) { left: 100%; top: 50%; background: radial-gradient(circle at 32% 28%, #ff9ccf, var(--m) 55%, #8b0050); box-shadow: 0 0 18px var(--m); }
+.ring span:nth-child(3) { left: 50%; top: 100%; background: radial-gradient(circle at 32% 28%, #fff3a1, var(--y) 55%, #9a7f00); box-shadow: 0 0 18px var(--y); }
+.ring span:nth-child(4) { left: 0; top: 50%; background: radial-gradient(circle at 32% 28%, #8a8a99, #222 60%, #000); box-shadow: 0 0 14px rgba(255,255,255,.35); }
+@keyframes spin { to { transform: rotate(360deg); } }
+.portrait { position: absolute; left: 50%; bottom: 0; height: 96%; width: auto; max-width: none; transform: translateX(-50%) translateZ(-10px); filter: drop-shadow(0 0 1.5px rgba(255,236,190,.85)) drop-shadow(0 0 34px rgba(224,168,60,.4)); -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%), linear-gradient(to right, transparent 0, #000 14%, #000 86%, transparent 100%); -webkit-mask-composite: source-in; mask-image: linear-gradient(to bottom, #000 72%, transparent 100%), linear-gradient(to right, transparent 0, #000 14%, #000 86%, transparent 100%); mask-composite: intersect; }
+.typewrap { position: absolute; left: 0; right: 0; bottom: 3%; display: grid; place-items: center; transform-style: preserve-3d; font-size: clamp(3.5rem, 21.5vw, 14.5rem); }
+.x3d { position: relative; display: inline-block; transform-style: preserve-3d; font-family: var(--display); text-transform: uppercase; line-height: .98; letter-spacing: .015em; white-space: nowrap; }
+.x3d .l { position: absolute; left: 0; top: 0; }
+.x3d .f { position: relative; display: block; color: #fff; text-shadow: 0 0 40px rgba(240,205,130,.5); }
+.script { text-transform: none; position: absolute; left: 1%; top: -.34em; font-family: var(--script); font-size: .56em; line-height: 1; color: var(--accent-2); transform: rotate(-7deg) translateZ(110px); text-shadow: 0 0 24px rgba(224,168,60,.9), 3px 4px 0 rgba(7,11,20,.8); pointer-events: none; white-space: nowrap; }
+
+/* Floating glass cards */
+.fl { position: absolute; left: var(--x); top: var(--y); z-index: 3; transform: translate3d(calc(var(--px, 0) * var(--d) * 1px), calc(var(--py, 0) * var(--d) * 1px), 140px); transition: transform .2s ease-out; }
+.fl .in { background: linear-gradient(145deg, rgba(255,255,255,.16), rgba(255,255,255,.04)); border: 1px solid rgba(255,255,255,.22); border-radius: 18px; padding: 14px 16px; backdrop-filter: blur(14px); box-shadow: 0 24px 50px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.3); animation: bob 6s ease-in-out infinite; min-width: 150px; }
+.fl:nth-of-type(2) .in { animation-delay: -2s; } .fl:nth-of-type(3) .in { animation-delay: -4s; } .fl:nth-of-type(4) .in { animation-delay: -1s; }
+.fl b { display: block; font-family: var(--display); font-weight: 400; font-size: 1.5rem; text-transform: uppercase; line-height: 1.05; letter-spacing: .02em; }
+.fl small { display: block; font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.fl .dots { display: flex; gap: 5px; margin-bottom: 10px; }
+.fl .dots i { width: 9px; height: 9px; border-radius: 50%; }
+.fl .dots i:nth-child(1) { background: var(--c); } .fl .dots i:nth-child(2) { background: var(--m); } .fl .dots i:nth-child(3) { background: var(--y); } .fl .dots i:nth-child(4) { background: #fff; }
+@keyframes bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+@media (max-width: 860px) { .fl.hide-s { display: none; } .fl .in { min-width: 0; padding: 10px 12px; } .fl b { font-size: 1.15rem; } }
+
+/* Hero lower */
+.hero-low { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 24px clamp(24px, 5vw, 64px); align-items: end; padding-block: 8px clamp(32px, 5vw, 56px); }
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 54ch; }
+.lede strong { color: #fff; font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; border-radius: 999px; text-decoration: none; font-weight: 500; border: 1px solid var(--line); color: #fff; background: rgba(255,255,255,.04); }
+.btn:hover { border-color: #fff; }
+.btn.primary { background: linear-gradient(180deg, #f8e3a0, #d9a441 55%, #b8801f); border-color: transparent; color: #1a1205; font-weight: 600; box-shadow: 0 10px 30px rgba(224,168,60,.45), inset 0 1px 0 rgba(255,255,255,.6); }
+.btn.primary:hover { filter: brightness(1.1); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.stat { padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.03); }
+.stat b { color: var(--accent-2); display: block; font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1; font-variant-numeric: tabular-nums; }
+@media (max-width: 820px) { .hero-low { grid-template-columns: 1fr; } }
+
+/* Ribbon */
+.ribbon-wrap { overflow: hidden; margin-inline: calc(-1 * clamp(16px, 4vw, 48px)); padding-block: 36px; }
+.ribbon { display: flex; width: max-content; transform: rotate(-2.2deg); background: linear-gradient(180deg, #f8e3a0, #d9a441 55%, #b8801f); border-block: 2px solid rgba(255,255,255,.4); box-shadow: 0 20px 50px rgba(224,168,60,.3); animation: slide 38s linear infinite; }
+.ribbon span { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 4vw, 2.6rem); letter-spacing: .04em; padding: 10px 28px; color: #1a1205; white-space: nowrap; display: inline-flex; align-items: center; gap: 28px; }
+.ribbon span::after { content: ""; width: 14px; height: 14px; background: #1a1205; transform: rotate(45deg); }
+@keyframes slide { to { transform: rotate(-2.2deg) translateX(-50%); } }
+
+/* Sections */
+section { padding-block: clamp(48px, 8vw, 96px); }
+.sec-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 32px; margin-bottom: clamp(28px, 4vw, 48px); }
+.sec-head h2 { font-size: clamp(3rem, 9vw, 6.4rem); }
+.sec-head p { max-width: 44ch; color: var(--muted); }
+[data-tilt] { transform-style: preserve-3d; transition: transform .18s ease-out, box-shadow .2s; will-change: transform; }
+
+/* Services */
+.svc { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 22px); list-style: none; margin: 0; padding: 0; }
+.svc li { padding: 24px 22px 22px; border-radius: 22px; border: 1px solid var(--line); background: linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.015)); display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.svc li:hover { box-shadow: 0 30px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(240,205,130,.5); }
+.svc .w { font-family: var(--display); text-transform: uppercase; font-size: clamp(2.3rem, 5vw, 3.2rem); line-height: .95; overflow-wrap: anywhere; }
+.svc p { color: var(--muted); font-size: .95rem; }
+@media (max-width: 900px) { .svc { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .svc { grid-template-columns: 1fr; } }
+
+/* Work */
+.work-block { margin-bottom: clamp(44px, 6vw, 80px); }
+.work-block > header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px; margin-bottom: 20px; }
+.work-block h3 { font-size: clamp(2rem, 4.5vw, 3rem); }
+.posters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2.6vw, 32px); align-items: start; }
+.sheet { margin: 0; padding: 10px; border-radius: 16px; background: linear-gradient(160deg, rgba(255,255,255,.12), rgba(255,255,255,.03)); border: 1px solid var(--line); box-shadow: 0 30px 60px rgba(0,0,0,.45); }
+.sheet img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.sheet figcaption { padding: 12px 4px 4px; display: flex; justify-content: space-between; gap: 8px; }
+.sheet:hover { box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(240,205,130,.55); }
+.posters.two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 780px; }
+.posters.auth { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.posters.auth .sheet { grid-column: span 2; }
+.posters.auth .sheet:nth-child(n+4) { grid-column: span 3; }
+@media (max-width: 960px) { .posters.auth { grid-template-columns: repeat(2, minmax(0, 1fr)); } .posters.auth .sheet, .posters.auth .sheet:nth-child(n+4) { grid-column: auto; } .posters.auth .sheet:last-child { grid-column: 1 / -1; } }
+@media (max-width: 960px) { .posters.four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 680px) { .posters, .posters.two, .posters.auth { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; } }
+.logos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 3vw, 36px); }
+.logo { margin: 0; text-align: center; }
+.disc { position: relative; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; padding: 15%; background: radial-gradient(circle at 30% 22%, #4f8dff 0%, #0a57c6 45%, #04245c 100%); box-shadow: inset -14px -20px 40px rgba(0,0,0,.45), inset 10px 10px 30px rgba(255,255,255,.25), 0 30px 50px rgba(0,0,0,.55), 0 0 40px rgba(10,87,198,.35); }
+.disc::after { content: ""; position: absolute; left: 16%; top: 8%; width: 36%; height: 22%; border-radius: 50%; background: radial-gradient(ellipse, rgba(255,255,255,.55), rgba(255,255,255,0) 70%); transform: rotate(-28deg); pointer-events: none; }
+.disc img { position: relative; z-index: 1; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.logo figcaption { margin-top: 16px; }
+@media (max-width: 680px) { .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: clamp(14px, 2.6vw, 32px); }
+.chef { display: grid; align-content: center; background: linear-gradient(160deg, #fff3ec, #ffd9c4); }
+.chef img { max-height: 400px; width: auto; max-width: 100%; margin-inline: auto; border-radius: 0; filter: drop-shadow(0 18px 18px rgba(60,14,0,.35)); }
+.chef figcaption .mono { color: #4a5370; }
+.mock { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2.6vw, 32px); }
+.mock img { aspect-ratio: 4 / 3; object-fit: cover; }
+@media (max-width: 760px) { .duo, .mock { grid-template-columns: 1fr; } }
+
+/* Websites */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.chip { font-family: var(--mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--muted); cursor: pointer; }
+.chip:hover { color: #fff; border-color: #fff; }
+.chip[aria-pressed="true"] { background: #fff; color: #070b14; border-color: #fff; }
+.sites { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 22px); }
+.site a { display: flex; flex-direction: column; height: 100%; text-decoration: none; border-radius: 22px; border: 1px solid var(--line); background: var(--card); overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
+.site:hover a { box-shadow: 0 36px 70px rgba(0,0,0,.6), 0 0 0 1px rgba(240,205,130,.6); }
+.site .art { position: relative; display: block; padding: 0; background: linear-gradient(135deg, hsl(var(--h) 75% 40%), hsl(var(--h) 70% 14%)); }
+.site .art::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 85% 0%, rgba(255,255,255,.28), rgba(255,255,255,0) 55%); }
+.site .art .bar { position: relative; display: flex; align-items: center; gap: 5px; padding: 8px 10px; background: rgba(0,0,0,.35); }
+.site .art .bar i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.4); flex: none; }
+.site .art .bar .url { margin-left: 6px; flex: 1; min-width: 0; font-family: var(--mono); font-size: .62rem; color: rgba(255,255,255,.8); background: rgba(255,255,255,.12); border-radius: 999px; padding: 2px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.site .art .hdr { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 12px; background: rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.14); }
+.site .art .lg { font-family: var(--display); font-weight: 400; font-size: .86rem; letter-spacing: .04em; text-transform: uppercase; color: #fff; white-space: nowrap; flex: none; max-width: 52%; overflow: hidden; text-overflow: ellipsis; }
+.site .art .navs { display: flex; flex-wrap: wrap; column-gap: 10px; row-gap: 40px; height: 1em; line-height: 1; min-width: 0; overflow: hidden; justify-content: flex-end; align-content: flex-start; }
+.site .art .navs em { font-style: normal; font-family: var(--body); font-size: .6rem; color: rgba(255,255,255,.78); white-space: nowrap; }
+.site .art .hero { position: relative; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; padding: 18px 14px 20px; min-height: 108px; }
+.site .art .hl { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height: 1.02; color: #fff; text-wrap: balance; text-shadow: 1px 1px 0 rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.2); }
+.site .art .hl-only { font-size: clamp(1.9rem, 3.6vw, 2.4rem); }
+.site .art .hb { font-family: var(--mono); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; color: #1a1205; background: linear-gradient(180deg, #f8e3a0, #d9a441); padding: 4px 10px; border-radius: 999px; }
+.site .body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.site .dom { font-family: var(--mono); font-size: .78rem; color: var(--accent-2); overflow-wrap: anywhere; }
+.site .what { color: var(--muted); font-size: .94rem; }
+.site .row { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 6px; }
+.tag { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); }
+.tag.wp { color: var(--c); border-color: rgba(0,180,230,.5); } .tag.shopify { color: var(--y); border-color: rgba(255,212,0,.5); }
+.go { font-family: var(--mono); color: #fff; }
+@media (max-width: 900px) { .sites { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .sites { grid-template-columns: 1fr; } }
+
+
+/* Catalogue */
+
+
+.cat-top { margin-bottom: 22px; }
+.pgrid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(10px, 1.6vw, 18px); }
+.pc a { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 14px; min-height: 160px; height: 100%; padding: 16px; border-radius: 18px; text-decoration: none; overflow: hidden; border: 1px solid rgba(255,255,255,.14); background: linear-gradient(145deg, hsl(var(--h) 70% 38%), hsl(var(--h) 65% 12%)); box-shadow: 0 14px 30px rgba(0,0,0,.4); }
+.pc a::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 90% 0%, rgba(255,255,255,.25), rgba(255,255,255,0) 55%); pointer-events: none; }
+.pc a:hover { box-shadow: 0 26px 50px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.55); }
+.pc .nm { position: relative; font-family: var(--display); text-transform: uppercase; font-size: clamp(1.45rem, 2.4vw, 1.85rem); line-height: 1; color: #fff; overflow-wrap: anywhere; text-shadow: 1px 1px 0 rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.3), 3px 3px 0 rgba(0,0,0,.3), 4px 4px 0 rgba(0,0,0,.3), 5px 6px 10px rgba(0,0,0,.4); }
+.pc .meta { position: relative; display: grid; gap: 6px; }
+.pc .sub { font-size: .8rem; color: rgba(255,255,255,.8); }
+.pc .row2 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.pc .cat { font-family: var(--mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.75); flex: 1; min-width: 0; }
+.pc .price { font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; padding: 3px 9px; border-radius: 999px; background: #fff; color: #1a0d09; font-weight: 500; white-space: nowrap; }
+.pc .go { font-family: var(--mono); color: #fff; }
+@media (max-width: 1000px) { .pgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pc a { min-height: 150px; padding: 14px; } }
+@media (max-width: 380px) { .pgrid { grid-template-columns: 1fr; } }
+
+
+/* ===== More 3D ===== */
+.aurora { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.aurora b { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .5; animation: drift 24s ease-in-out infinite alternate; }
+.aurora b:nth-child(1) { width: 560px; height: 560px; left: -140px; top: 8%; background: rgba(224,168,60,.35); }
+.aurora b:nth-child(2) { width: 640px; height: 640px; right: -180px; top: 38%; background: rgba(47,208,181,.28); animation-duration: 30s; animation-delay: -8s; }
+.aurora b:nth-child(3) { width: 520px; height: 520px; left: 30%; bottom: -160px; background: rgba(124,92,255,.30); animation-duration: 27s; animation-delay: -14s; }
+@keyframes drift { from { transform: translate3d(0,0,0) scale(1); } to { transform: translate3d(70px,-60px,0) scale(1.18); } }
+#gl { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.scene { z-index: 1; }
+[data-tilt] { position: relative; }
+[data-tilt]::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .2s; background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255,255,255,.3), rgba(255,255,255,0) 55%); }
+[data-tilt]:hover::after { opacity: 1; }
+.sec-head h2 { transform-origin: 0 60%; will-change: transform; }
+
+/* 3D gallery ring */
+.g3d { position: relative; height: clamp(400px, 58vw, 580px); perspective: 1800px; perspective-origin: 50% 38%; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; outline-offset: 6px; }
+.g3d.drag { cursor: grabbing; }
+.g3d-ring { position: absolute; left: 50%; top: 52%; width: 0; height: 0; transform-style: preserve-3d; }
+.c3 { position: absolute; width: var(--cw); height: calc(var(--cw) * 1.36); left: calc(var(--cw) * -.5); top: calc(var(--cw) * -.68); transform-style: preserve-3d; backface-visibility: visible; }
+.c3 .face { position: absolute; inset: 0; border-radius: 14px; overflow: hidden; border: 1px solid rgba(240,205,130,.55); background: #0d1424; box-shadow: 0 30px 60px rgba(0,0,0,.5), 0 0 40px rgba(224,168,60,.2); transform: translateZ(0); }
+.c3 .face::before { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(115deg, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 68%, rgba(255,255,255,.14) 100%); }
+.c3::before, .c3::after { content: ""; position: absolute; inset: 0; border-radius: 14px; opacity: var(--o, 1); }
+.c3 .face { opacity: var(--o, 1); }
+.c3::before { background: linear-gradient(180deg, #f0cd82, #8a5a12 60%, #3a2605); transform: translateZ(-7px); }
+.c3::after { background: #2a1a04; transform: translateZ(-14px); box-shadow: 0 40px 60px rgba(0,0,0,.55); }
+.c3 .refl { position: absolute; left: 0; right: 0; top: 100%; height: 38%; margin-top: 6px; border-radius: 14px; overflow: hidden; opacity: .28; transform: scaleY(-1); transform-origin: top; -webkit-mask-image: linear-gradient(to bottom, #000, transparent 85%); mask-image: linear-gradient(to bottom, #000, transparent 85%); pointer-events: none; }
+.c3 .refl img { position: absolute; left: 0; bottom: 0; width: 100%; height: calc(100% / .38); object-fit: cover; object-position: bottom; }
+.c3 img { display: block; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.g3d-floor { position: absolute; left: 50%; bottom: 4%; width: min(80%, 760px); height: 90px; transform: translateX(-50%) rotateX(72deg); background: radial-gradient(ellipse, rgba(224,168,60,.4), rgba(224,168,60,0) 68%); filter: blur(6px); pointer-events: none; }
+.g3d-ui { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 8px; }
+.g3d-ui .mono { min-width: 0; text-align: center; color: var(--accent-2); }
+.g3d-btn { width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(240,205,130,.5); background: linear-gradient(180deg, #f8e3a0, #d9a441 60%, #b8801f); color: #1a1205; font-size: 1.2rem; font-weight: 700; cursor: pointer; box-shadow: 0 5px 0 #7a5413, 0 12px 22px rgba(224,168,60,.35), inset 0 1px 0 rgba(255,255,255,.6); transition: transform .1s, box-shadow .1s; flex: none; }
+.g3d-btn:active { transform: translateY(4px); box-shadow: 0 1px 0 #7a5413, 0 4px 10px rgba(224,168,60,.3), inset 0 1px 0 rgba(255,255,255,.5); }
+
+/* Second ribbon, crossing the first */
+.ribbon-wrap.r2 { margin-top: -34px; padding-block: 28px; }
+.ribbon2 { transform: rotate(1.8deg); background: linear-gradient(180deg, #123049, #07121f); border-block: 2px solid rgba(47,208,181,.6); box-shadow: 0 18px 46px rgba(47,208,181,.2); animation: slide2 44s linear infinite; }
+.ribbon2 span { color: var(--accent-2); }
+.ribbon2 span::after { background: var(--teal); }
+@keyframes slide2 { from { transform: rotate(1.8deg) translateX(-50%); } to { transform: rotate(1.8deg) translateX(0); } }
+
+/* CSS 3D cubes */
+.cube-wrap { position: absolute; width: 64px; height: 64px; perspective: 500px; pointer-events: none; z-index: 2; }
+.cube { position: relative; width: 64px; height: 64px; transform-style: preserve-3d; animation: cubespin 16s linear infinite; }
+.cube i { position: absolute; inset: 0; border: 1px solid rgba(255,232,170,.75); background: linear-gradient(135deg, rgba(248,227,160,.38), rgba(184,128,31,.16)); box-shadow: inset 0 0 20px rgba(255,220,130,.4); }
+.cube i:nth-child(1) { transform: translateZ(32px); } .cube i:nth-child(2) { transform: rotateY(180deg) translateZ(32px); }
+.cube i:nth-child(3) { transform: rotateY(90deg) translateZ(32px); } .cube i:nth-child(4) { transform: rotateY(-90deg) translateZ(32px); }
+.cube i:nth-child(5) { transform: rotateX(90deg) translateZ(32px); } .cube i:nth-child(6) { transform: rotateX(-90deg) translateZ(32px); }
+@keyframes cubespin { from { transform: rotateX(-24deg) rotateY(0deg); } to { transform: rotateX(336deg) rotateY(360deg); } }
+section { position: relative; }
+@media (prefers-reduced-motion: reduce) { .aurora b, .ribbon2, .cube { animation: none; } }
+
+
+.work-block[hidden] { display: none !important; }
+.posters.ringed { display: none !important; }
+.g3d.sm { height: clamp(380px, 52vw, 520px); }
+/* Small glass cursor with a glass trail and click glow (fine pointers only) */
+.cur, .cur-t, .cur-r { position: fixed; left: 0; top: 0; z-index: 2147483000; pointer-events: none; display: none; }
+@media (hover: hover) and (pointer: fine) {
+  html.has-cur, html.has-cur body, html.has-cur body * { cursor: none !important; }
+  html.has-cur .cur, html.has-cur .cur-t, html.has-cur .cur-r { display: block; }
+}
+.cur { width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.85) 0, rgba(255,255,255,.28) 38%, hsl(var(--ch) 100% 70% / .16) 72%); border: 1px solid rgba(255,255,255,.7); -webkit-backdrop-filter: blur(5px) saturate(1.6); backdrop-filter: blur(5px) saturate(1.6); box-shadow: 0 4px 14px rgba(0,0,0,.25), inset 0 1px 1px rgba(255,255,255,.9), inset 0 -3px 6px hsl(var(--ch) 100% 60% / .35); transition: width .2s, height .2s, margin .2s; z-index: 2147483001; }
+.cur::after { content: ""; position: absolute; left: 50%; top: 50%; width: 4px; height: 4px; margin: -2px 0 0 -2px; border-radius: 50%; background: #fff; box-shadow: 0 0 6px hsl(var(--ch) 100% 65%); }
+.cur.hot { width: 34px; height: 34px; margin: -17px 0 0 -17px; }
+.cur.down { width: 16px; height: 16px; margin: -8px 0 0 -8px; }
+.cur-t { width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.55), rgba(255,255,255,.12) 60%, hsl(var(--ch) 100% 70% / .1)); border: 1px solid rgba(255,255,255,.4); -webkit-backdrop-filter: blur(6px) saturate(1.5); backdrop-filter: blur(6px) saturate(1.5); box-shadow: inset 0 1px 1px rgba(255,255,255,.6); }
+.cur-r { width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; border: 2px solid hsl(var(--ch) 100% 70%); background: radial-gradient(circle, hsl(var(--ch) 100% 75% / .55), hsl(var(--ch) 100% 60% / 0) 70%); box-shadow: 0 0 22px 6px hsl(var(--ch) 100% 62% / .75), inset 0 0 14px hsl(var(--ch) 100% 80% / .6); }
+
+/* About */
+.about { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 64px); align-items: start; }
+.about .aside { display: grid; gap: 32px; min-width: 0; }
+.about .copy p { font-size: 1.2rem; max-width: 56ch; }
+.about .copy p + p { margin-top: 16px; color: var(--muted); font-size: 1rem; }
+.facts { display: grid; gap: 24px; align-content: start; }
+.facts dl { margin: 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.03); }
+.facts dt { margin-bottom: 6px; }
+.facts dd { margin: 0; padding-block: 10px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; }
+.facts dt + dd { border-top: 0; }
+.facts dd span:last-child { color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.about > .sheet { position: relative; isolation: isolate; padding: 14px; border-radius: 24px; background: linear-gradient(145deg, rgba(248,227,160,.38), rgba(255,255,255,.05) 40%, rgba(217,164,65,.28)); border: 1px solid rgba(240,205,130,.6); box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 70px rgba(224,168,60,.28), inset 0 1px 0 rgba(255,255,255,.5); }
+.about > .sheet::before { content: ""; position: absolute; inset: -22px; z-index: -1; border-radius: 40px; background: conic-gradient(from 0deg, #f0cd82, #2fd0b5, #ff2d95, #ffd400, #f0cd82); filter: blur(30px); opacity: .42; animation: aboutglow 14s linear infinite; }
+.about > .sheet img { border-radius: 14px; image-rendering: auto; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.about > .sheet figcaption { padding-top: 14px; }
+.about .badge { position: absolute; z-index: 3; top: -14px; right: 16px; display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: #1a1205; padding: 8px 14px; border-radius: 999px; background: linear-gradient(180deg, #f8e3a0, #d9a441 60%, #b8801f); box-shadow: 0 5px 0 #7a5413, 0 14px 24px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.6); transform: translateZ(30px); animation: floaty 4s ease-in-out infinite; }
+.about .badge i { width: 8px; height: 8px; border-radius: 50%; background: #1fa35b; box-shadow: 0 0 0 0 rgba(31,163,91,.7); animation: dotping 1.8s ease-out infinite; }
+@keyframes aboutglow { to { transform: rotate(360deg); } }
+@keyframes floaty { 50% { translate: 0 -5px; } }
+@keyframes dotping { to { box-shadow: 0 0 0 8px rgba(31,163,91,0); } }
+@media (prefers-reduced-motion: reduce) { .about > .sheet::before, .about .badge, .about .badge i { animation: none; } }
+@media (max-width: 820px) { .about { grid-template-columns: 1fr; } .about > .sheet { max-width: 420px; } }
+
+/* Contact */
+.contact { position: relative; overflow: hidden; border-radius: 28px; border: 1px solid var(--line); padding: clamp(24px, 5vw, 60px); background: radial-gradient(700px 400px at 0% 0%, rgba(224,168,60,.35), rgba(224,168,60,0) 70%), var(--card); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(24px, 5vw, 56px); }
+.contact h2 { font-size: clamp(3.4rem, 10vw, 7.4rem); line-height: .9; }
+.rows { align-self: center; }
+.crow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding-block: 16px; border-top: 1px solid var(--line); }
+.crow:last-child { border-bottom: 1px solid var(--line); }
+.crow .val { font-size: 1.05rem; overflow-wrap: anywhere; user-select: all; min-width: 0; }
+.copy-btn { font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.05); color: #fff; cursor: pointer; text-decoration: none; }
+.copy-btn:hover { border-color: #fff; }
+@media (max-width: 820px) { .contact { grid-template-columns: 1fr; } }
+
+/* WhatsApp 3D button */
+.wa { position: relative; display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px 13px 16px; border-radius: 999px; color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem; background: linear-gradient(180deg, #5cf08a 0%, #25d366 48%, #12994f 100%); box-shadow: 0 6px 0 #0a6b35, 0 16px 30px rgba(37,211,102,.45), inset 0 2px 0 rgba(255,255,255,.6), inset 0 -4px 8px rgba(0,0,0,.18); text-shadow: 0 1px 2px rgba(0,0,0,.35); transition: transform .12s ease, box-shadow .12s ease; }
+.wa:hover { transform: translateY(-2px); box-shadow: 0 8px 0 #0a6b35, 0 20px 34px rgba(37,211,102,.55), inset 0 2px 0 rgba(255,255,255,.6), inset 0 -4px 8px rgba(0,0,0,.18); }
+.wa:active { transform: translateY(5px); box-shadow: 0 1px 0 #0a6b35, 0 6px 14px rgba(37,211,102,.4), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -4px 8px rgba(0,0,0,.18); }
+.wa svg { width: 28px; height: 28px; flex: none; filter: drop-shadow(0 2px 2px rgba(0,0,0,.3)); }
+.wa-fab { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); padding: 0; width: 64px; height: 64px; justify-content: center; gap: 0; }
+.to-top { position: fixed; z-index: 40; right: max(26px, calc(10px + env(safe-area-inset-right, 0px))); bottom: calc(16px + 64px + 14px + env(safe-area-inset-bottom, 0px)); width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border-radius: 50%; border: 1px solid rgba(240,205,130,.55); background: linear-gradient(180deg, #f8e3a0, #d9a441 60%, #b8801f); color: #1a1205; cursor: pointer; box-shadow: 0 4px 0 #7a5413, 0 12px 20px rgba(224,168,60,.3), inset 0 1px 0 rgba(255,255,255,.6); opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity .25s, transform .25s, box-shadow .1s; }
+.to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+.to-top:active { transform: translateY(3px); box-shadow: 0 1px 0 #7a5413, 0 4px 10px rgba(224,168,60,.3); }
+.wa-fab svg { width: 34px; height: 34px; }
+.wa-fab .t { position: absolute; right: 74px; top: 50%; transform: translateY(-50%); white-space: nowrap; font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; background: #fff; color: #070b14; padding: 8px 12px; border-radius: 999px; box-shadow: 0 8px 20px rgba(0,0,0,.4); opacity: 0; pointer-events: none; transition: opacity .15s; text-shadow: none; }
+.wa-fab:hover .t, .wa-fab:focus-visible .t { opacity: 1; }
+.wa-fab::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid #25d366; animation: ping 2.4s ease-out infinite; }
+@keyframes ping { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.7); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .wa-fab::before { animation: none; display: none; } .wa { transition: none; } }
+
+.brand img { display: block; height: 46px; width: auto; filter: drop-shadow(0 0 12px rgba(214,160,60,.4)); transition: transform .2s; }
+.brand:hover img { transform: scale(1.06) rotate(-2deg); }
+.foot-logo { display: grid; justify-items: center; padding-top: clamp(24px, 5vw, 56px); }
+.foot-logo img { display: block; height: clamp(110px, 18vw, 170px); width: auto; filter: drop-shadow(0 0 28px rgba(214,160,60,.35)); }
+
+.posters.cat { display: block; column-count: 4; column-gap: clamp(14px, 2.6vw, 32px); }
+.posters.cat .sheet { break-inside: avoid; margin: 0 0 clamp(14px, 2.6vw, 32px); }
+@media (max-width: 960px) { .posters.cat { column-count: 3; } }
+@media (max-width: 680px) { .posters.cat { column-count: 2; max-width: none; column-gap: 12px; } .posters.cat .sheet { margin-bottom: 12px; } .posters.cat figcaption .mono { font-size: .62rem; } }
+.c3 .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(16px) brightness(.55) saturate(1.2); transform: scale(1.25); }
+.c3 img.fg.contain { object-fit: contain; position: relative; }
+
+/* Skyline backdrop (used in the contact panel) */
+.sky { position: absolute; left: 0; bottom: 0; width: 100%; height: 46%; pointer-events: none; }
+.contact > * { position: relative; z-index: 1; }
+.contact > .sky { position: absolute; z-index: 0; left: -20%; bottom: 0; width: 125%; height: 78%; opacity: 1; pointer-events: none; -webkit-mask-image: linear-gradient(to top, #000 55%, transparent 100%); mask-image: linear-gradient(to top, #000 55%, transparent 100%); }
+@media (max-width: 820px) { .contact > .sky { width: 210%; left: -55%; height: 60%; } }
+.sky .tw1 { animation: twk 3.4s ease-in-out infinite; } .sky .tw2 { animation: twk 4.7s -1.6s ease-in-out infinite; }
+.sky .st { animation: twk 3s ease-in-out infinite; } .sky .st1 { animation-duration: 4.2s; animation-delay: -1s; } .sky .st2 { animation-duration: 5.1s; animation-delay: -2.3s; }
+.sky .bk { animation: bk 1.7s ease-in-out infinite; }
+.sky .beam { transform-box: fill-box; transform-origin: 50% 100%; animation: sweep 9s ease-in-out infinite; } .sky .b2 { animation-duration: 12s; animation-direction: reverse; }
+@keyframes twk { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+@keyframes bk { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+@keyframes sweep { 0%, 100% { transform: rotate(-22deg); } 50% { transform: rotate(22deg); } }
+@media (prefers-reduced-motion: reduce) { .sky .tw1, .sky .tw2, .sky .st, .sky .bk, .sky .beam { animation: none; } }
+.contact .rows { background: rgba(8,10,26,.62); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(240,205,130,.28); border-radius: 20px; padding: 6px clamp(14px, 2.4vw, 26px) 18px; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+.contact .crow:first-child { border-top: 0; }
+footer { padding-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ring, .ribbon, .fl .in { animation: none; }
+  [data-tilt], .fl { transition: none; }
+}
+/* ===== Responsive hardening (mobile, tablet, laptop, desktop) ===== */
+body { margin: 0; }
+/* Keep anchored section headings clear of the sticky header */
+section[id] { scroll-margin-top: 84px; }
+html { overflow-x: clip; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@supports not (overflow: clip) { html { overflow-x: hidden; } body { overflow-x: visible; } }
+img, svg, canvas, video { max-width: 100%; }
+.portrait { max-width: none; }
+/* 3D scenes are clipped to their own box so they can never widen the page */
+.stage { overflow-x: clip; overflow-clip-margin: clamp(16px, 4vw, 48px); }
+@media (min-width: 1025px) { .stage { overflow: visible; } }
+.g3d { overflow-x: clip; margin-inline: calc(-1 * clamp(16px, 4vw, 48px)); }
+.top, .fl .in, .emirates span, .contact .rows { -webkit-backdrop-filter: blur(12px); }
+.btn, .wa, .copy-btn, .chip, .cchip, .g3d-btn { min-height: 44px; }
+.copy-btn { display: inline-flex; align-items: center; }
+.crow .val { min-width: 0; }
+
+/* Mobile navigation */
+.menu-btn { display: none; width: 46px; height: 46px; padding: 0; border-radius: 12px; border: 1px solid var(--line); background: rgba(255,255,255,.05); cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 5px; flex: none; }
+.menu-btn span { display: block; width: 20px; height: 2px; border-radius: 2px; background: #fff; transition: transform .2s, opacity .2s; }
+.menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+@media (max-width: 900px) {
+  .menu-btn { display: flex; }
+  nav#site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 6px clamp(16px, 4vw, 48px) 18px; background: rgba(7,11,20,.97); border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px rgba(0,0,0,.5); max-height: calc(100vh - 70px); overflow-y: auto; }
+  nav#site-nav.open { display: flex; }
+  nav#site-nav a, nav#site-nav a:not(.cta) { display: block !important; padding: 15px 4px; font-size: .8rem; border-bottom: 1px solid var(--line); }
+  nav#site-nav a.cta { margin-top: 14px; border-bottom: 0; text-align: center; padding: 14px 18px; }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  body { font-size: 15.5px; }
+  .hero { padding-top: 14px; }
+  .stage { height: clamp(430px, 118vw, 560px); }
+  .typewrap { font-size: clamp(3rem, 19vw, 5.6rem); }
+  .script { left: calc(50% - 3.4em) !important; }
+  .lede { font-size: 1.05rem; }
+  .actions { gap: 10px; }
+  .actions .btn, .actions .wa { flex: 1 1 100%; justify-content: center; }
+  .stats { gap: 8px; }
+  .stat { padding: 12px 10px; }
+  .sec-head h2 { font-size: clamp(2.6rem, 14vw, 4rem); }
+  .contact { border-radius: 22px; }
+  .contact h2 { font-size: clamp(3rem, 15vw, 4.6rem); }
+  .crow { gap: 6px 12px; }
+  .uae { border-radius: 22px; }
+  .wa-fab { width: 56px; height: 56px; }
+  .wa-fab svg { width: 30px; height: 30px; }
+  .wa-fab .t { display: none; }
+  .to-top { bottom: calc(16px + 56px + 12px + env(safe-area-inset-bottom, 0px)); right: max(20px, env(safe-area-inset-right, 0px)); }
+  .g3d { height: clamp(360px, 100vw, 460px); }
+  .g3d.sm { height: clamp(340px, 96vw, 440px); }
+  footer { flex-direction: column; gap: 6px; padding-bottom: 72px; }
+}
+@media (max-width: 380px) {
+  .brand img { height: 40px; }
+  .stats { grid-template-columns: 1fr 1fr 1fr; }
+  .stat b { font-size: 1.8rem; }
+}
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .typewrap { font-size: clamp(5rem, 19vw, 11rem); }
+  .stage { height: clamp(520px, 74vw, 700px); }
+}
+/* Landscape phones: keep the hero from taking more than the screen */
+@media (max-height: 520px) and (orientation: landscape) {
+  .stage { height: 420px; }
+  .typewrap { font-size: clamp(3rem, 12vw, 6rem); }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="skyg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa468"/><stop offset=".5" stop-color="#8f3512"/><stop offset="1" stop-color="#1c0b06"/></linearGradient><pattern id="win" width="10" height="13" patternUnits="userSpaceOnUse"><rect x="3" y="4" width="2.4" height="3.4" fill="#ffe9b0" opacity=".6"/></pattern><g id="front"><rect x="0" y="170" width="34" height="130"/><rect x="36" y="137" width="22" height="163"/><rect x="64" y="143" width="52" height="157"/><rect x="120" y="117" width="42" height="183"/><rect x="164" y="136" width="42" height="164"/><rect x="210" y="203" width="22" height="97"/><rect x="234" y="180" width="28" height="120"/><rect x="350" y="209" width="22" height="91"/><rect x="378" y="95" width="34" height="205"/><rect x="418" y="140" width="34" height="160"/><rect x="456" y="128" width="42" height="172"/><rect x="500" y="88" width="28" height="212"/><rect x="534" y="197" width="28" height="103"/><rect x="564" y="162" width="42" height="138"/><rect x="635" y="214" width="34" height="86"/><rect x="675" y="147" width="52" height="153"/><rect x="729" y="115" width="42" height="185"/><rect x="777" y="180" width="52" height="120"/><rect x="833" y="169" width="22" height="131"/><rect x="945" y="222" width="28" height="78"/><rect x="977" y="216" width="28" height="84"/><rect x="1060" y="230" width="22" height="70"/><rect x="1088" y="184" width="22" height="116"/><rect x="1112" y="152" width="28" height="148"/><rect x="1146" y="186" width="34" height="114"/><rect x="1184" y="216" width="22" height="84"/><polygon points="570,300 570,190 580,190 580,140 588,140 588,95 594,95 594,50 598,50 600,4 602,50 606,50 606,95 612,95 612,140 620,140 620,190 630,190 630,300"/><polygon points="275,300 275,150 331,52 336,52 336,300"/><rect x="262" y="286" width="86" height="14"/><rect x="862" y="150" width="14" height="150"/><rect x="926" y="150" width="14" height="150"/><rect x="862" y="136" width="78" height="18"/><polygon points="990,300 990,110 1004,72 1018,110 1018,300"/><polygon points="1028,300 1028,140 1040,108 1052,140 1052,300"/></g><symbol id="skyline" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice"><g fill="rgba(240,205,130,.16)"><rect x="0" y="221" width="30" height="79"/><rect x="34" y="231" width="18" height="69"/><rect x="60" y="194" width="18" height="106"/><rect x="86" y="176" width="18" height="124"/><rect x="104" y="229" width="18" height="71"/><rect x="126" y="232" width="38" height="68"/><rect x="164" y="170" width="18" height="130"/><rect x="186" y="168" width="18" height="132"/><rect x="204" y="160" width="24" height="140"/><rect x="236" y="233" width="46" height="67"/><rect x="290" y="190" width="46" height="110"/><rect x="336" y="235" width="24" height="65"/><rect x="368" y="203" width="24" height="97"/><rect x="396" y="171" width="24" height="129"/><rect x="420" y="201" width="46" height="99"/><rect x="474" y="227" width="24" height="73"/><rect x="506" y="159" width="46" height="141"/><rect x="552" y="228" width="30" height="72"/><rect x="590" y="168" width="18" height="132"/><rect x="608" y="214" width="46" height="86"/><rect x="658" y="186" width="46" height="114"/><rect x="708" y="166" width="38" height="134"/><rect x="750" y="202" width="30" height="98"/><rect x="780" y="151" width="24" height="149"/><rect x="804" y="167" width="18" height="133"/><rect x="826" y="177" width="46" height="123"/><rect x="876" y="204" width="38" height="96"/><rect x="922" y="225" width="18" height="75"/><rect x="948" y="219" width="38" height="81"/><rect x="990" y="178" width="24" height="122"/><rect x="1018" y="155" width="18" height="145"/><rect x="1036" y="167" width="46" height="133"/><rect x="1086" y="152" width="30" height="148"/><rect x="1120" y="177" width="46" height="123"/><rect x="1174" y="232" width="38" height="68"/></g><use href="#front" fill="url(#skyg)"/><use href="#front" fill="url(#win)"/></symbol></defs></svg>
+<div class="aurora" aria-hidden="true"><b></b><b></b><b></b></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Haris Ali, home"><img src="img/logo-mark.png" alt="Haris Ali calligraphy logo" width="291" height="360"></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Sections">
+      <a href="#gallery">3D Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#work">Print &amp; brand</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#websites">Websites</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap hero" id="top">
+  <h1 class="sr">Haris Ali, graphic designer and print specialist in Dubai</h1>
+  <div class="kicker"><span class="mono">Haris Ali · Print specialist</span></div>
+
+  <div class="stage" id="stage" aria-hidden="true">
+    <canvas id="gl"></canvas>
+    <div class="scene">
+      <div class="tilt" id="tilt">
+        <div class="glow"></div>
+        <div class="orbit"><div class="ring"><span></span><span></span><span></span><span></span></div><div class="ring b"></div></div>
+        <img class="portrait" src="img/portrait-cut.webp" alt="" width="720" height="1280" fetchpriority="high">
+        <div class="typewrap">
+          <div class="x3d" id="type3d" data-text="Designer" data-depth="18" data-step="2.6"><span class="f">Designer</span></div>
+          <span class="script" style="left: calc(50% - 4.3em)">Graphic</span>
+        </div>
+      </div>
+    </div>
+    <div class="fl" style="--x: 4%; --y: 12%; --d: 26"><div class="in"><div class="dots"><i></i><i></i><i></i><i></i></div><b>Logos</b><small>Brand marks</small></div></div>
+    <div class="fl" style="--x: auto; --y: 8%; right: 4%; --d: 18"><div class="in"><div class="dots"><i></i><i></i><i></i><i></i></div><b>Print-ready</b><small>Bleed · Trim · CMYK</small></div></div>
+    <div class="fl hide-s" style="--x: 6%; --y: 44%; --d: 34"><div class="in"><b>Posters</b><small>Flyers · Offers</small></div></div>
+    <div class="fl hide-s" style="--x: auto; --y: 40%; right: 5%; --d: 30"><div class="in"><b>11 sites</b><small>WordPress · Shopify</small></div></div>
+  </div>
+
+  <div class="hero-low">
+    <div>
+      <p class="lede">I design logos, posters and websites for businesses across the UAE. <strong>Every file leaves my desk set up for print</strong>, so what you approve on screen is what comes off the press.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">See the work</a>
+        <a class="btn" href="#contact">Start a project</a>
+        <a class="wa" href="https://wa.me/971505662452?text=Hi%20Haris%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.9 1.5 6 1.5 6.9 0 12.6-5.6 12.6-12.5S22.9 3 16 3z"/><path fill="#16a34a" d="M22.6 19.4c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2s-.4.2-.7.1c-1.9-.9-3.1-1.7-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7 2 .8 2.8.9 3.8.7.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg><span>WhatsApp me</span></a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>7+</b><span class="mono">Years</span></div>
+      <div class="stat"><b>200+</b><span class="mono">Designs</span></div>
+      <div class="stat"><b>11</b><span class="mono">Websites</span></div>
+    </div>
+  </div>
+</main>
+
+<div class="ribbon-wrap" aria-hidden="true">
+  <div class="ribbon">
+    <span>Logos</span><span>Posters</span><span>Print production</span><span>Illustration</span><span>WordPress</span><span>Shopify</span>
+    <span>Logos</span><span>Posters</span><span>Print production</span><span>Illustration</span><span>WordPress</span><span>Shopify</span>
+  </div>
+</div>
+
+<div class="ribbon-wrap r2" aria-hidden="true">
+  <div class="ribbon ribbon2">
+    <span>Spot UV</span><span>Gold foil</span><span>Neon signs</span><span>3D letters</span><span>Acrylic</span><span>Banners</span>
+    <span>Spot UV</span><span>Gold foil</span><span>Neon signs</span><span>3D letters</span><span>Acrylic</span><span>Banners</span>
+  </div>
+</div>
+
+<div class="wrap">
+<section id="gallery" style="padding-bottom:0">
+  <div class="sec-head">
+    <h2 class="ext">Work in 3D</h2>
+    <p>Drag to spin through recent pieces, or use the arrows.</p>
+  </div>
+  <div class="g3d" id="g3d" tabindex="0" role="group" aria-label="3D gallery of recent print work. Drag or use the arrow keys to rotate.">
+    <div class="g3d-floor"></div>
+    <div class="g3d-ring" id="g3dRing"></div>
+  </div>
+  <div class="g3d-ui"><button class="g3d-btn" id="g3dPrev" type="button" aria-label="Previous piece">&#8592;</button><span class="mono" id="g3dCap">Loading</span><button class="g3d-btn" id="g3dNext" type="button" aria-label="Next piece">&#8594;</button></div>
+</section>
+</div>
+
+<div class="wrap">
+<section id="services">
+  <div class="sec-head">
+    <h2 class="ext">What I make</h2>
+    <p>From the first sketch to the file your printer asks for, plus the website that goes with it.</p>
+  </div>
+  <ul class="svc">
+    <li data-tilt><span class="w ext-m">Logo</span><h3 style="font-size:1.5rem">Brand identity</h3><p>Marks, colour systems and brand sheets that hold up on a shopfront, a business card and a phone screen.</p></li>
+    <li data-tilt><span class="w ext-m">Poster</span><h3 style="font-size:1.5rem">Print collateral</h3><p>Flyers, offer posters, menus and brochures in the right size, with bleed, safe margins and resolution.</p></li>
+    <li data-tilt><span class="w ext-m">Print</span><h3 style="font-size:1.5rem">File preparation</h3><p>Trim marks, CMYK colour and clean exports, so the printer gets a file that runs without questions.</p></li>
+    <li data-tilt><span class="w ext-m">Mascot</span><h3 style="font-size:1.5rem">Illustration</h3><p>Characters and spot art drawn to sit inside a logo, a menu or a campaign.</p></li>
+    <li data-tilt><span class="w ext-m">WordPress</span><h3 style="font-size:1.5rem">Business websites</h3><p>Sites for contractors, developers, consultancies and traders, styled to match the printed brand.</p></li>
+    <li data-tilt><span class="w ext-m">Shopify</span><h3 style="font-size:1.5rem">Online stores</h3><p>Storefronts and product pages, set up so the catalogue is easy to keep updated.</p></li>
+  </ul>
+</section>
+</div>
+
+<div class="wrap">
+<section id="work" style="padding-top:0">
+  <div class="sec-head">
+    <h2 class="ext">Print &amp; brand</h2>
+    <p>A selection from client jobs in Dubai. Each piece was designed to be printed and used.</p>
+  </div>
+
+  <div class="work-block">
+    <header><h3 class="ext-m">Posters</h3><span class="mono">Offers · Services · Delivery</span></header>
+    <div class="posters">
+      <figure class="sheet" data-tilt><img src="img/poster-fancy.jpg" alt="Poster for Al Samer Parcel Delivery showing a courier holding boxes and a delivery rider on a motorbike" loading="lazy"><figcaption><span class="mono">Al Samer Parcel Delivery</span><span class="mono">Poster</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/poster-alaflah.jpg" alt="Grooming offers poster for Fancy and Furry Pets Care with price tiers, day care rate and QR codes" loading="lazy"><figcaption><span class="mono">Fancy &amp; Furry Pets Care</span><span class="mono">Offer poster</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/poster-samer.jpg" alt="Services and pricing poster for Al Aflah Studio with photo collage of fashion, wedding and product shoots" loading="lazy"><figcaption><span class="mono">Al Aflah Studio</span><span class="mono">Services flyer</span></figcaption></figure>
+    </div>
+  </div>
+
+  <div class="work-block">
+    <header><h3 class="ext-m">Restaurants &amp; menus</h3><span class="mono">Offers · Combos · Menus</span></header>
+    <div class="posters">
+      <figure class="sheet" data-tilt><img src="img/work-degh.jpg" alt="Menu with a 15 percent discount banner for DEGH Restaurant, with price lists, QR codes and delivery details" loading="lazy"><figcaption><span class="mono">DEGH Restaurant</span><span class="mono">Menu</span></figcaption></figure>
+    </div>
+  </div>
+
+  <div class="work-block">
+    <header><h3 class="ext-m">Beauty salon</h3><span class="mono">Offers · Service flyers</span></header>
+    <div class="posters two">
+      <figure class="sheet" data-tilt><img src="img/work-sidra1.jpg" alt="Perfect Look offer poster for Sidra Beauty Center with a 99 dirham price, service list and salon photos" loading="lazy"><figcaption><span class="mono">Sidra Beauty Center</span><span class="mono">Offer poster</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/work-sidra2.jpg" alt="Dandruff Spa flyer for Sidra Beauty Centre with a six-step treatment list and a portrait of a woman with long brown hair" loading="lazy"><figcaption><span class="mono">Sidra Beauty Centre</span><span class="mono">Service flyer</span></figcaption></figure>
+    </div>
+  </div>
+
+  <div class="work-block">
+    <header><h3 class="ext-m">Authenteque</h3><span class="mono">Profile · Catalogue · Display · Pin · Perfume strips</span></header>
+    <div class="posters auth">
+      <figure class="sheet" data-tilt><img src="img/work-profile.jpg" alt="Printed Authenteque perfume catalogue booklet cover with a woman's profile dissolving into smoke, a bouquet of flowers and the slogan We Believe Everyone Deserves To Be The Best" loading="lazy"><figcaption><span class="mono">Authenteque · Company profile</span><span class="mono">Printed booklet</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/work-authenteque.jpg" alt="Authenteque fragrance catalogue page with a gold logo and a grid of twelve perfume bottles with their names" loading="lazy"><figcaption><span class="mono">Authenteque</span><span class="mono">Catalogue page</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/work-stands.jpg" alt="Three white display stands with clear acrylic tops and gold bases, printed with the perfume names Blessed By God, Watermelon Sugar and Queen of Paradise and the Authenteque logo" loading="lazy"><figcaption><span class="mono">Authenteque · Display stands</span><span class="mono">Gold lettering</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/work-pin.jpg" alt="Close-up of a gold Authenteque logo pin on a black jacket lapel" loading="lazy"><figcaption><span class="mono">Authenteque · Brand pin</span><span class="mono">Logo in gold</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/work-cards.jpg" alt="Stacks and a fan of white Authenteque perfume strips printed with a gold logo, phone number and Instagram handle" loading="lazy"><figcaption><span class="mono">Authenteque · Perfume strips</span><span class="mono">Gold on white</span></figcaption></figure>
+    </div>
+  </div>
+
+  <div class="work-block src-only" hidden>
+    <header><h3 class="ext-m">Print products</h3><span class="mono">Signs, stands, stationery and more</span></header>
+    <div class="posters cat">
+      <figure class="sheet" data-tilt><img src="img/cat-00.jpg" alt="Yellow PVC banner with eyelets hung on a brick wall reading Custom PVC Banners, Any Size, Any Design, Fast Printing" loading="lazy"><figcaption><span class="mono">Custom PVC banners</span><span class="mono">Any size · any design</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-01.jpg" alt="White arched acrylic stand with gold mirror logo, social icons and QR codes beside a gold mirror Welcome to panel" loading="lazy"><figcaption><span class="mono">Acrylic welcome stand</span><span class="mono">Gold mirror + QR</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-02.jpg" alt="Two black mugs floating" loading="lazy"><figcaption><span class="mono">Custom mugs</span><span class="mono">Printed ceramic</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-03.jpg" alt="Three boxed notebook and pen gift sets in black, grey and navy" loading="lazy"><figcaption><span class="mono">Notebook and pen gift sets</span><span class="mono">Boxed, branded</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-04.jpg" alt="Black self-inking stamp" loading="lazy"><figcaption><span class="mono">Self-inking stamps</span><span class="mono">Company seals</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-05.jpg" alt="Black backlit 3D logo letters on a wood-slat wall" loading="lazy"><figcaption><span class="mono">Backlit 3D logo</span><span class="mono">Prescott</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-06.jpg" alt="Hand holding a black 3D letter M lit with white LED edge" loading="lazy"><figcaption><span class="mono">Halo-lit 3D letters</span><span class="mono">LED signage</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-07.jpg" alt="Pink, yellow and blue neon sign reading Customize Neon Sign" loading="lazy"><figcaption><span class="mono">Custom neon signs</span><span class="mono">LED neon</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-08.jpg" alt="Beige real estate card with a logo, QR code and illustrated houses" loading="lazy"><figcaption><span class="mono">Real estate card</span><span class="mono">With QR code</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-09.jpg" alt="Piano-key business cards for a musical arts centre" loading="lazy"><figcaption><span class="mono">Business cards, 400gsm</span><span class="mono">Music academy</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-10.jpg" alt="Pet shop business cards with pet treats and paw patterns" loading="lazy"><figcaption><span class="mono">Pet shop cards</span><span class="mono">Full-colour</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-11.jpg" alt="Black business cards with a gold lotus logo" loading="lazy"><figcaption><span class="mono">Gold foil business cards</span><span class="mono">Black and gold</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-12.jpg" alt="Letterhead on a wooden clipboard" loading="lazy"><figcaption><span class="mono">Letterheads</span><span class="mono">Printed stationery</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-13.jpg" alt="Illuminated bilingual signboard for Getwell Medical Center" loading="lazy"><figcaption><span class="mono">Lit shop signboard</span><span class="mono">Getwell Medical</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-14.jpg" alt="Curved pop-up display wall for a climate finance conference" loading="lazy"><figcaption><span class="mono">Pop-up backdrop</span><span class="mono">DFSA-HKMA</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-15.jpg" alt="Brushed gold nameplate with black engraved logo and Arabic and English text" loading="lazy"><figcaption><span class="mono">Brass nameplate</span><span class="mono">DMLC</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-16.jpg" alt="Shopfront with lit fascia sign and printed glass door graphics" loading="lazy"><figcaption><span class="mono">Shopfront and glass graphics</span><span class="mono">Hala Furniture</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-17.jpg" alt="Yellow and navy hi-vis vest with an eagle logo" loading="lazy"><figcaption><span class="mono">Branded safety vests</span><span class="mono">Sky Deal</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-18.jpg" alt="Stacks of blue caps with a printed logo patch" loading="lazy"><figcaption><span class="mono">Branded caps</span><span class="mono">Islamic Relief</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-19.jpg" alt="Hand holding a jute tote bag printed with a church logo" loading="lazy"><figcaption><span class="mono">Jute tote bags</span><span class="mono">Salvation Boat Parish</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-20.jpg" alt="Jungle themed photo frame with an owl mascot" loading="lazy"><figcaption><span class="mono">Photo frame cut-out</span><span class="mono">Zoomi, The ACT Hotel</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-21.jpg" alt="Rows of brushed steel table stands with menu QR codes" loading="lazy"><figcaption><span class="mono">QR menu stands</span><span class="mono">Brushed steel</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-22.jpg" alt="Red printed backdrop wall for a Dandiya Celebration event" loading="lazy"><figcaption><span class="mono">Event backdrop</span><span class="mono">Dandiya Nights</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-23.jpg" alt="Frosted vinyl stripes on an office glass partition" loading="lazy"><figcaption><span class="mono">Frosted glass film</span><span class="mono">Office partition</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-24.jpg" alt="Promotional counter with a printed header and front graphic" loading="lazy"><figcaption><span class="mono">Promo counter</span><span class="mono">MAX clinic</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-25.jpg" alt="Tall printed standee for a video game launch" loading="lazy"><figcaption><span class="mono">Standee display</span><span class="mono">Little Nightmares III</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-26.jpg" alt="Black acrylic wall sign with yellow logo and standoff pins" loading="lazy"><figcaption><span class="mono">Acrylic logo sign</span><span class="mono">Fadhi Group</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-27.jpg" alt="Four bright posters in a shop window" loading="lazy"><figcaption><span class="mono">Window posters</span><span class="mono">Shopfront</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-28.jpg" alt="Clear acrylic sign mounted on a wall" loading="lazy"><figcaption><span class="mono">Acrylic wall sign</span><span class="mono">Standoff mounts</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-29.jpg" alt="White backlit sign with a green DEAL logo" loading="lazy"><figcaption><span class="mono">Lightbox sign</span><span class="mono">Deal Store</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-30.jpg" alt="Blue sticker sheet with a peeling corner" loading="lazy"><figcaption><span class="mono">Vinyl stickers</span><span class="mono">GlossBoss</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-31.jpg" alt="Fan of brochures, flyers and a trifold" loading="lazy"><figcaption><span class="mono">Brochures and flyers</span><span class="mono">Folded and bound</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-32.jpg" alt="Three peel-corner promo stickers" loading="lazy"><figcaption><span class="mono">Promo stickers</span><span class="mono">Gas, grocery, water</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-33.jpg" alt="Red and brown paper cups" loading="lazy"><figcaption><span class="mono">Paper cups</span><span class="mono">4 oz, branded</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-34.jpg" alt="Pink die-cut door hangers for a burger shop" loading="lazy"><figcaption><span class="mono">Door hangers</span><span class="mono">Die-cut</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-35.jpg" alt="Fan of die-cut stickers" loading="lazy"><figcaption><span class="mono">Die-cut sticker packs</span><span class="mono">Any shape</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-36.jpg" alt="Kraft paper bag with logo and a white bag" loading="lazy"><figcaption><span class="mono">Paper bags</span><span class="mono">Kraft and white</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-37.jpg" alt="Vegetable pattern placemat with cutlery" loading="lazy"><figcaption><span class="mono">Placemats</span><span class="mono">Full-colour</span></figcaption></figure>
+      <figure class="sheet" data-tilt><img src="img/cat-38.jpg" alt="Real estate stationery set with envelopes and letterheads" loading="lazy"><figcaption><span class="mono">Stationery sets</span><span class="mono">Envelopes, folders, cards</span></figcaption></figure>
+    </div>
+  </div>
+
+  <div class="work-block">
+    <header><h3 class="ext-m">Logos</h3><span class="mono">Four marks, four colour stories</span></header>
+    <div class="logos">
+      <figure class="logo" data-tilt><div class="disc"><img src="img/logo-hiba.png" alt="Hiba and Co logo with a four-tile diamond mark" loading="lazy"></div><figcaption class="mono">Hiba &amp; Co.</figcaption></figure>
+      <figure class="logo" data-tilt><div class="disc"><img src="img/logo-crescent.png" alt="Logo made of overlapping green, red and black crescents" loading="lazy"></div><figcaption class="mono">Crescent mark</figcaption></figure>
+      <figure class="logo" data-tilt><div class="disc"><img src="img/logo-pets.png" alt="Logo of a dog and cat resting inside a green crescent held by a hand" loading="lazy"></div><figcaption class="mono">Fancy &amp; Furry</figcaption></figure>
+      <figure class="logo" data-tilt><div class="disc"><img src="img/logo-hadi.png" alt="Hadi Jewellers logo with gold Arabic calligraphy inside a laurel wreath" loading="lazy"></div><figcaption class="mono">Hadi Jewellers</figcaption></figure>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="wrap">
+<section id="catalogue" style="padding-top:0">
+  <div class="cube-wrap" aria-hidden="true" style="right:3%;top:-34px"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  <div class="sec-head">
+    <h2 class="ext">Catalogue</h2>
+    <p>48 products from my WhatsApp catalogue. Tap one to see the details and order on WhatsApp.</p>
+  </div>
+  <div class="cat-top"><a class="wa" href="https://wa.me/c/971505662452" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.9 1.5 6 1.5 6.9 0 12.6-5.6 12.6-12.5S22.9 3 16 3z"/><path fill="#16a34a" d="M22.6 19.4c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2s-.4.2-.7.1c-1.9-.9-3.1-1.7-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7 2 .8 2.8.9 3.8.7.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg><span>Open full catalogue on WhatsApp</span></a></div>
+  <div class="filters" role="group" aria-label="Filter the catalogue"><button class="chip cchip" type="button" data-cf="all" aria-pressed="true">All 48</button><button class="chip cchip" type="button" data-cf="cards" aria-pressed="false">Cards & stationery 16</button><button class="chip cchip" type="button" data-cf="stickers" aria-pressed="false">Stickers & vinyl 5</button><button class="chip cchip" type="button" data-cf="signage" aria-pressed="false">Signage 9</button><button class="chip cchip" type="button" data-cf="displays" aria-pressed="false">Banners & displays 8</button><button class="chip cchip" type="button" data-cf="merch" aria-pressed="false">Promo & packaging 10</button></div>
+  <ul class="pgrid" id="pgrid">
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/27787647350895188/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Die Cut Business Card, open on WhatsApp"><span class="nm">Die Cut Business Card</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/24826937057005273/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="400gsm Card, open on WhatsApp"><span class="nm">400gsm Card</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/24158557480486643/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Business Card Spot UV, open on WhatsApp"><span class="nm">Business Card Spot UV</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25085895167771822/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Business Card Spot UV, open on WhatsApp"><span class="nm">Business Card Spot UV</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25857123480541753/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Gold Foil Business Card, open on WhatsApp"><span class="nm">Gold Foil Business Card</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25135242259428657/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Business Card, open on WhatsApp"><span class="nm">Business Card</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25198298396526229/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Letterhead, open on WhatsApp"><span class="nm">Letterhead</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/32095472696767372/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Envelope, open on WhatsApp"><span class="nm">Envelope</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25032683713051316/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="NCR Books, open on WhatsApp"><span class="nm">NCR Books</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/29173661952226368/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Diary Printing, open on WhatsApp"><span class="nm">Diary Printing</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25168557659497630/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Flyers, open on WhatsApp"><span class="nm">Flyers</span><span class="meta"><span class="sub">A4, A5</span><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/27879570668383406/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Company Profile, open on WhatsApp"><span class="nm">Company Profile</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25233519272951149/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Menu, open on WhatsApp"><span class="nm">Menu</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25015876341395923/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Door Hanger, open on WhatsApp"><span class="nm">Door Hanger</span><span class="meta"><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/40217082624557026/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Name Badge, open on WhatsApp"><span class="nm">Name Badge</span><span class="meta"><span class="sub">Customized</span><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="cards"><a data-tilt href="https://wa.me/p/25058426927099345/971505662452" target="_blank" rel="noopener" style="--h:20" aria-label="Lanyard ID Card, open on WhatsApp"><span class="nm">Lanyard ID Card</span><span class="meta"><span class="sub">Customized</span><span class="row2"><span class="cat">Cards &amp; stationery</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="stickers"><a data-tilt href="https://wa.me/p/25192642380422840/971505662452" target="_blank" rel="noopener" style="--h:320" aria-label="Print &amp; Cut Paper Stickers, open on WhatsApp"><span class="nm">Print &amp; Cut Paper Stickers</span><span class="meta"><span class="row2"><span class="cat">Stickers &amp; vinyl</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="stickers"><a data-tilt href="https://wa.me/p/24958638597133490/971505662452" target="_blank" rel="noopener" style="--h:320" aria-label="Paper Stickers, open on WhatsApp"><span class="nm">Paper Stickers</span><span class="meta"><span class="row2"><span class="cat">Stickers &amp; vinyl</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="stickers"><a data-tilt href="https://wa.me/p/24902208699471319/971505662452" target="_blank" rel="noopener" style="--h:320" aria-label="Vinyl Sticker Printing, open on WhatsApp"><span class="nm">Vinyl Sticker Printing</span><span class="meta"><span class="row2"><span class="cat">Stickers &amp; vinyl</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="stickers"><a data-tilt href="https://wa.me/p/24954899730833634/971505662452" target="_blank" rel="noopener" style="--h:320" aria-label="Die Cut Stickers, open on WhatsApp"><span class="nm">Die Cut Stickers</span><span class="meta"><span class="sub">Glossy, customized</span><span class="row2"><span class="cat">Stickers &amp; vinyl</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="stickers"><a data-tilt href="https://wa.me/p/25794310226837963/971505662452" target="_blank" rel="noopener" style="--h:320" aria-label="Frosted, open on WhatsApp"><span class="nm">Frosted</span><span class="meta"><span class="row2"><span class="cat">Stickers &amp; vinyl</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/25906151188991156/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="Frontlit Acrylic Signboard, open on WhatsApp"><span class="nm">Frontlit Acrylic Signboard</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/25052298491058770/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="Flex Backlit Signboard, open on WhatsApp"><span class="nm">Flex Backlit Signboard</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/32319808424331617/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="3D Edge Light Letters, open on WhatsApp"><span class="nm">3D Edge Light Letters</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/24982697161385749/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="Neon Sign, open on WhatsApp"><span class="nm">Neon Sign</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/25469689782637031/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="Acrylic Signage, open on WhatsApp"><span class="nm">Acrylic Signage</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/32189481740698281/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="Acrylic Door Sign, open on WhatsApp"><span class="nm">Acrylic Door Sign</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/24793169623688042/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="SS Aluminum Door Sign, open on WhatsApp"><span class="nm">SS Aluminum Door Sign</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/25325661323741602/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="SS with Printing, open on WhatsApp"><span class="nm">SS with Printing</span><span class="meta"><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="signage"><a data-tilt href="https://wa.me/p/32253296204316764/971505662452" target="_blank" rel="noopener" style="--h:262" aria-label="Acrylic with Sticker Cutout, open on WhatsApp"><span class="nm">Acrylic with Sticker Cutout</span><span class="meta"><span class="sub">8mm black acrylic</span><span class="row2"><span class="cat">Signage</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/28939184105705235/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Banner Printing, open on WhatsApp"><span class="nm">Banner Printing</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/25250910397854343/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Pop-up Stand, open on WhatsApp"><span class="nm">Pop-up Stand</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/24902581006078266/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Backdrop, open on WhatsApp"><span class="nm">Backdrop</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/26152931467640694/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Promotional Table, open on WhatsApp"><span class="nm">Promotional Table</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/39359374837009563/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Acrylic Stand, open on WhatsApp"><span class="nm">Acrylic Stand</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/28381237018163512/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Acrylic Display Stand, open on WhatsApp"><span class="nm">Acrylic Display Stand</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/25476882945248775/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Foamboard Standee, open on WhatsApp"><span class="nm">Foamboard Standee</span><span class="meta"><span class="sub">10mm, with back support</span><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="displays"><a data-tilt href="https://wa.me/p/25490877250505573/971505662452" target="_blank" rel="noopener" style="--h:192" aria-label="Foamboard Photo Frame Cutout, open on WhatsApp"><span class="nm">Foamboard Photo Frame Cutout</span><span class="meta"><span class="row2"><span class="cat">Banners &amp; displays</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/28441246685498632/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Cup Printing, open on WhatsApp"><span class="nm">Cup Printing</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/25700168806234846/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Paper Cups, open on WhatsApp"><span class="nm">Paper Cups</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/25018671174461107/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Paper Bags, open on WhatsApp"><span class="nm">Paper Bags</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/24518917774454870/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Jute Bag with DTF, open on WhatsApp"><span class="nm">Jute Bag with DTF</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/25023702450624585/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Table Mat, open on WhatsApp"><span class="nm">Table Mat</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/9343582809099086/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Car Mat, open on WhatsApp"><span class="nm">Car Mat</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/25026490507006400/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Cap, open on WhatsApp"><span class="nm">Cap</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/24355790014095361/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="T-Shirt Custom DTF, open on WhatsApp"><span class="nm">T-Shirt Custom DTF</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/25444034881899579/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Site Safety Jacket, open on WhatsApp"><span class="nm">Site Safety Jacket</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+    <li class="pc" data-c="merch"><a data-tilt href="https://wa.me/p/32504001512578655/971505662452" target="_blank" rel="noopener" style="--h:145" aria-label="Self Ink Automatic Stamp, open on WhatsApp"><span class="nm">Self Ink Automatic Stamp</span><span class="meta"><span class="row2"><span class="cat">Promo &amp; packaging</span><span class="go">↗</span></span></span></a></li>
+  </ul>
+</section>
+</div>
+
+<div class="wrap">
+<section id="websites" style="padding-top:0">
+  <div class="sec-head">
+    <h2 class="ext">Websites</h2>
+    <p>Eleven sites for clients in the UAE, Saudi Arabia, Pakistan and the US. Each link opens in a new tab.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter by platform">
+    <button class="chip" type="button" data-filter="all" aria-pressed="true">All 11</button>
+    <button class="chip" type="button" data-filter="wp" aria-pressed="false">WordPress 9</button>
+    <button class="chip" type="button" data-filter="shopify" aria-pressed="false">Shopify 2</button>
+  </div>
+  <ul class="sites" id="sites">
+    <li class="site" data-p="wp"><a data-tilt href="https://casaskyline.com" target="_blank" rel="noopener"><div class="art" style="--h:215"><div class="bar"><i></i><i></i><i></i><span class="url">casaskyline.com</span></div><div class="hdr"><b class="lg">Casa Skyline</b><span class="navs"><em>Services</em><em>BIM</em><em>Solar</em><em>Projects</em><em>About</em><em>Contact</em></span></div><div class="hero"><span class="hl">Creating Landmarks, Inspiring Living</span><span class="hb">Get in touch</span></div></div><div class="body"><span class="dom">casaskyline.com</span><span class="what">Building contractor in the UAE: general contracting, fit-out and maintenance.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="wp"><a data-tilt href="https://prestondevelopment.ae" target="_blank" rel="noopener"><div class="art" style="--h:265"><div class="bar"><i></i><i></i><i></i><span class="url">prestondevelopment.ae</span></div><div class="hdr"><b class="lg">Preston Properties</b><span class="navs"><em>Home</em><em>Team</em><em>Projects</em><em>About Us</em><em>Contact</em></span></div><div class="hero"><span class="hl">Building the Future, Today</span><span class="hb">Discover More</span></div></div><div class="body"><span class="dom">prestondevelopment.ae</span><span class="what">Dubai property developer with a smart-home apartment project.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="wp"><a data-tilt href="https://matrixxinvestments.com/" target="_blank" rel="noopener"><div class="art" style="--h:170"><div class="bar"><i></i><i></i><i></i><span class="url">matrixxinvestments.com</span></div><div class="hdr"><b class="lg">Matrixx Investment UAE</b><span class="navs"><em>Home</em><em>ROI</em><em>Consultancy</em><em>Services</em><em>Team</em><em>Contact</em></span></div><div class="hero"><span class="hl">Matrixx Real Estate</span><span class="hb">Explore Our Solution</span></div></div><div class="body"><span class="dom">matrixxinvestments.com</span><span class="what">Dubai real estate investment and development consultancy.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="wp"><a data-tilt href="https://prymusconsulting.com/" target="_blank" rel="noopener"><div class="art" style="--h:290"><div class="bar"><i></i><i></i><i></i><span class="url">prymusconsulting.com</span></div><div class="hdr"><b class="lg">Prymus Consulting</b><span class="navs"><em>Home</em><em>Service</em><em>About</em><em>Why Prymus</em><em>Contact</em></span></div><div class="hero"><span class="hl">Strategic Clarity. Operational Confidence. Consistent Growth.</span><span class="hb">Book a Discovery Call</span></div></div><div class="body"><span class="dom">prymusconsulting.com</span><span class="what">CRM, automation and AI systems for sales and marketing teams.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+        <li class="site" data-p="wp"><a data-tilt href="https://redaejari-realestate.com" target="_blank" rel="noopener"><div class="art" style="--h:340"><div class="bar"><i></i><i></i><i></i><span class="url">redaejari-realestate.com</span></div><div class="hdr"><b class="lg">Reda Ejari &amp; Real Estate</b><span class="navs"><em>Home</em><em>Services</em><em>Gallery</em><em>About Us</em><em>Contact Us</em></span></div><div class="hero"><span class="hl">Trusted Ejari Experts in Dubai</span><span class="hb">Contact Us</span></div></div><div class="body"><span class="dom">redaejari-realestate.com</span><span class="what">Ejari tenancy registration for homes and shops in Dubai.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+        <li class="site" data-p="wp"><a data-tilt href="https://rovexaelectricity.com/" target="_blank" rel="noopener"><div class="art" style="--h:35"><div class="bar"><i></i><i></i><i></i><span class="url">rovexaelectricity.com</span></div><div class="hdr"><b class="lg">ROVEXA</b><span class="navs"><em>Home</em><em>Services</em><em>About</em><em>Contact</em></span></div><div class="hero"><span class="hl">Create, Enhance and Sustain Fast-Track Services</span><span class="hb">Contact Us</span></div></div><div class="body"><span class="dom">rovexaelectricity.com</span><span class="what">Electrical infrastructure installation and project delivery in Dubai.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="wp"><a data-tilt href="https://samijassim.com/" target="_blank" rel="noopener"><div class="art" style="--h:185"><div class="bar"><i></i><i></i><i></i><span class="url">samijassim.com</span></div><div class="hdr"><b class="lg">Sami Jassim</b><span class="navs"></span></div><div class="hero"><span class="hl hl-only">Sami Jassim</span></div></div><div class="body"><span class="dom">samijassim.com</span><span class="what">Industrial automation, SCADA and Smart ERP in Saudi Arabia.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="wp"><a data-tilt href="https://almoutamizgt.com/" target="_blank" rel="noopener"><div class="art" style="--h:320"><div class="bar"><i></i><i></i><i></i><span class="url">almoutamizgt.com</span></div><div class="hdr"><b class="lg">AL MOUTAMIZ</b><span class="navs"><em>Home</em><em>Skincare</em><em>Haircare</em><em>New Arrival</em></span></div><div class="hero"><span class="hl">Premium Beauty Products, Trusted Worldwide</span><span class="hb">Explore Products</span></div></div><div class="body"><span class="dom">almoutamizgt.com</span><span class="what">Cosmetics and beauty wholesale, distribution and export from Dubai.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="wp"><a data-tilt href="https://bestmeatzone.com/" target="_blank" rel="noopener"><div class="art" style="--h:5"><div class="bar"><i></i><i></i><i></i><span class="url">bestmeatzone.com</span></div><div class="hdr"><b class="lg">Best Meat Zone</b><span class="navs"></span></div><div class="hero"><span class="hl hl-only">Best Meat Zone</span></div></div><div class="body"><span class="dom">bestmeatzone.com</span><span class="what">Launch page for Best Meat Zone UAE.</span><div class="row"><span class="tag wp">WordPress</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="shopify"><a data-tilt href="https://maztronicss.net" target="_blank" rel="noopener"><div class="art" style="--h:145"><div class="bar"><i></i><i></i><i></i><span class="url">maztronicss.net</span></div><div class="hdr"><b class="lg">Maztronics</b><span class="navs"></span></div><div class="hero"><span class="hl hl-only">Maztronics</span></div></div><div class="body"><span class="dom">maztronicss.net</span><span class="what">Online store for Maztronics.</span><div class="row"><span class="tag shopify">Shopify</span><span class="go">Visit ↗</span></div></div></a></li>
+    <li class="site" data-p="shopify"><a data-tilt href="https://flamepakistan.com" target="_blank" rel="noopener"><div class="art" style="--h:15"><div class="bar"><i></i><i></i><i></i><span class="url">flamepakistan.com</span></div><div class="hdr"><b class="lg">FLAME</b><span class="navs"><em>Men's</em><em>Women</em><em>The Vault</em><em>Track Order</em></span></div><div class="hero"><span class="hl">Summer Sale 30% Off</span><span class="hb">Shop Now</span></div></div><div class="body"><span class="dom">flamepakistan.com</span><span class="what">Streetwear brand selling oversized tees, hoodies and sneakers across Pakistan.</span><div class="row"><span class="tag shopify">Shopify</span><span class="go">Visit ↗</span></div></div></a></li>
+  </ul>
+</section>
+</div>
+
+<div class="wrap">
+<section id="about" style="padding-top:0">
+  <div class="sec-head"><h2 class="ext">About</h2></div>
+  <div class="about">
+    <figure class="sheet" data-tilt><span class="badge"><i></i>Open for work · Deira, Dubai</span><img src="img/about-open.jpg" alt="Haris Ali sitting at a green desk with a curved monitor under the headline We are Open, with the words Design, Print and Advertisement" loading="lazy"><figcaption><span class="mono">Studio announcement</span><span class="mono">Social post</span></figcaption></figure>
+    <div class="aside">
+    <div class="copy">
+      <p>I'm Haris Ali, a graphic designer and print specialist from Pakistan, working from Deira, Dubai with clients across the UAE. For seven years I've turned complex briefs into clear visuals: logos, marketing collateral, and the websites that carry a brand online.</p>
+      <p>I care about the last step as much as the first. A poster is only finished when it prints cleanly, so I prepare files with the press in mind, and I build sites so the brand looks the same on a screen as on paper.</p>
+    </div>
+    <div class="facts">
+      <dl>
+        <dt class="mono">Education</dt>
+        <dd><span>B.Sc, Islamia Science &amp; Arts College</span><span>2021</span></dd>
+        <dd><span>Workers Model School</span><span>2016</span></dd>
+      </dl>
+      <dl>
+        <dt class="mono">Tools</dt>
+        <dd><span>Design</span><span>Photoshop · Illustrator · CorelDraw</span></dd>
+        <dd><span>Layout</span><span>InPage · Canva · Figma</span></dd>
+        <dd><span>Web</span><span>WordPress · Shopify</span></dd>
+      </dl>
+    </div>
+  
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="wrap">
+<section id="contact" style="padding-top:0">
+  <div class="contact">
+    <div class="cube-wrap" aria-hidden="true" style="right:5%;top:22px"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <svg class="sky" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><defs><linearGradient id="sk-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0d22" stop-opacity="0"/><stop offset=".35" stop-color="#3a1550" stop-opacity=".75"/><stop offset=".75" stop-color="#d9633a" stop-opacity=".9"/><stop offset="1" stop-color="#ffc065"/></linearGradient>
+<linearGradient id="sk-b1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b2a66"/><stop offset="1" stop-color="#1a1236"/></linearGradient>
+<linearGradient id="sk-b2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1d4d"/><stop offset="1" stop-color="#0f0a22"/></linearGradient>
+<linearGradient id="sk-b3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14102a"/><stop offset=".5" stop-color="#241a46"/><stop offset="1" stop-color="#0c0820"/></linearGradient>
+<linearGradient id="sk-gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a5a12"/><stop offset=".45" stop-color="#ffe9a8"/><stop offset="1" stop-color="#b8801f"/></linearGradient>
+<radialGradient id="sk-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd37a" stop-opacity=".85"/><stop offset="1" stop-color="#ffd37a" stop-opacity="0"/></radialGradient>
+<linearGradient id="sk-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb35a" stop-opacity=".55"/><stop offset="1" stop-color="#1a1236" stop-opacity="0"/></linearGradient>
+<pattern id="sk-w1" width="9" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="3" width="2.6" height="3.6" fill="#ffe9a8"/><rect x="6" y="9" width="1.8" height="2.6" fill="#ffd37a"/></pattern>
+<pattern id="sk-w2" width="11" height="14" patternUnits="userSpaceOnUse"><rect x="5" y="2" width="2.6" height="3.6" fill="#fff4cf"/><rect x="1" y="8" width="2" height="3" fill="#ffc065"/></pattern>
+<linearGradient id="sk-beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff4cf" stop-opacity=".55"/><stop offset="1" stop-color="#fff4cf" stop-opacity="0"/></linearGradient></defs><rect width="1200" height="360" fill="url(#sk-sky)"/><circle class="st st0" cx="673" cy="44" r="1.8" fill="#fff"/><circle class="st st1" cx="108" cy="24" r="0.8" fill="#fff"/><circle class="st st2" cx="758" cy="20" r="1.0" fill="#fff"/><circle class="st st0" cx="86" cy="28" r="1.8" fill="#fff"/><circle class="st st1" cx="866" cy="23" r="1.0" fill="#fff"/><circle class="st st2" cx="195" cy="147" r="1.8" fill="#fff"/><circle class="st st0" cx="131" cy="150" r="0.8" fill="#fff"/><circle class="st st1" cx="467" cy="21" r="1.8" fill="#fff"/><circle class="st st2" cx="111" cy="62" r="0.8" fill="#fff"/><circle class="st st0" cx="1150" cy="40" r="1.3" fill="#fff"/><circle class="st st1" cx="868" cy="42" r="0.8" fill="#fff"/><circle class="st st2" cx="1179" cy="84" r="1.0" fill="#fff"/><circle class="st st0" cx="221" cy="54" r="1.3" fill="#fff"/><circle class="st st1" cx="209" cy="146" r="0.8" fill="#fff"/><circle class="st st2" cx="1165" cy="21" r="1.0" fill="#fff"/><circle class="st st0" cx="1026" cy="142" r="1.8" fill="#fff"/><circle class="st st1" cx="653" cy="125" r="1.8" fill="#fff"/><circle class="st st2" cx="750" cy="82" r="1.0" fill="#fff"/><circle class="st st0" cx="378" cy="68" r="0.8" fill="#fff"/><circle class="st st1" cx="1186" cy="82" r="1.8" fill="#fff"/><circle class="st st2" cx="713" cy="120" r="1.3" fill="#fff"/><circle class="st st0" cx="159" cy="36" r="1.8" fill="#fff"/><circle class="st st1" cx="347" cy="93" r="1.0" fill="#fff"/><circle class="st st2" cx="1011" cy="113" r="0.8" fill="#fff"/><circle class="st st0" cx="168" cy="148" r="1.3" fill="#fff"/><circle class="st st1" cx="706" cy="95" r="1.8" fill="#fff"/><circle class="st st2" cx="944" cy="23" r="0.8" fill="#fff"/><circle class="st st0" cx="562" cy="127" r="0.8" fill="#fff"/><circle class="st st1" cx="134" cy="85" r="1.8" fill="#fff"/><circle class="st st2" cx="592" cy="104" r="1.3" fill="#fff"/><circle class="st st0" cx="56" cy="124" r="1.3" fill="#fff"/><circle class="st st1" cx="354" cy="35" r="1.8" fill="#fff"/><circle class="st st2" cx="130" cy="61" r="1.3" fill="#fff"/><circle class="st st0" cx="274" cy="69" r="1.8" fill="#fff"/><circle class="st st1" cx="810" cy="133" r="0.8" fill="#fff"/><circle class="st st2" cx="350" cy="120" r="1.8" fill="#fff"/><circle class="st st0" cx="1135" cy="77" r="1.0" fill="#fff"/><circle class="st st1" cx="891" cy="146" r="1.3" fill="#fff"/><circle class="st st2" cx="860" cy="97" r="1.8" fill="#fff"/><circle class="st st0" cx="482" cy="44" r="0.8" fill="#fff"/><circle class="st st1" cx="370" cy="44" r="1.0" fill="#fff"/><circle class="st st2" cx="487" cy="9" r="1.8" fill="#fff"/><circle class="st st0" cx="383" cy="73" r="1.3" fill="#fff"/><circle class="st st1" cx="18" cy="43" r="1.8" fill="#fff"/><circle class="st st2" cx="1104" cy="100" r="1.3" fill="#fff"/><circle class="st st0" cx="267" cy="137" r="0.8" fill="#fff"/><g><circle cx="1040" cy="64" r="46" fill="url(#sk-glow)"/><circle cx="1040" cy="64" r="20" fill="#fff0c7"/><circle cx="1049" cy="58" r="18" fill="#3a1550"/></g><g class="beams"><path class="beam b1" d="M150 340 L110 20 L190 20 Z" fill="url(#sk-beam)"/><path class="beam b2" d="M980 340 L940 40 L1020 40 Z" fill="url(#sk-beam)"/></g><g opacity=".75"><rect x="-10" y="198" width="26" height="172" fill="url(#sk-b1)"/><rect x="16" y="255" width="30" height="115" fill="url(#sk-b1)"/><rect x="54" y="213" width="46" height="157" fill="url(#sk-b1)"/><rect x="108" y="222" width="42" height="148" fill="url(#sk-b1)"/><rect x="152" y="208" width="25" height="162" fill="url(#sk-b1)"/><rect x="177" y="215" width="34" height="155" fill="url(#sk-b1)"/><rect x="211" y="213" width="44" height="157" fill="url(#sk-b1)"/><rect x="259" y="241" width="45" height="129" fill="url(#sk-b1)"/><rect x="304" y="267" width="32" height="103" fill="url(#sk-b1)"/><rect x="336" y="187" width="22" height="183" fill="url(#sk-b1)"/><rect x="358" y="183" width="34" height="187" fill="url(#sk-b1)"/><rect x="394" y="178" width="35" height="192" fill="url(#sk-b1)"/><rect x="429" y="242" width="38" height="128" fill="url(#sk-b1)"/><rect x="475" y="200" width="37" height="170" fill="url(#sk-b1)"/><rect x="514" y="241" width="33" height="129" fill="url(#sk-b1)"/><rect x="549" y="212" width="46" height="158" fill="url(#sk-b1)"/><rect x="599" y="217" width="22" height="153" fill="url(#sk-b1)"/><rect x="621" y="190" width="27" height="180" fill="url(#sk-b1)"/><rect x="652" y="175" width="25" height="195" fill="url(#sk-b1)"/><rect x="681" y="179" width="45" height="191" fill="url(#sk-b1)"/><rect x="734" y="185" width="38" height="185" fill="url(#sk-b1)"/><rect x="774" y="234" width="31" height="136" fill="url(#sk-b1)"/><rect x="813" y="220" width="38" height="150" fill="url(#sk-b1)"/><rect x="851" y="239" width="37" height="131" fill="url(#sk-b1)"/><rect x="896" y="185" width="35" height="185" fill="url(#sk-b1)"/><rect x="933" y="200" width="33" height="170" fill="url(#sk-b1)"/><rect x="970" y="214" width="24" height="156" fill="url(#sk-b1)"/><rect x="994" y="250" width="46" height="120" fill="url(#sk-b1)"/><rect x="1048" y="208" width="33" height="162" fill="url(#sk-b1)"/><rect x="1081" y="265" width="37" height="105" fill="url(#sk-b1)"/><rect x="1122" y="192" width="44" height="178" fill="url(#sk-b1)"/><rect x="1174" y="249" width="42" height="121" fill="url(#sk-b1)"/></g><rect x="-10" y="283" width="54" height="87" fill="url(#sk-b2)"/><rect class="tw tw1" x="-10" y="289" width="54" height="51" fill="url(#sk-w1)"/><rect class="tw tw2" x="-10" y="289" width="54" height="51" fill="url(#sk-w2)"/><rect x="48" y="269" width="50" height="101" fill="url(#sk-b2)"/><rect class="tw tw1" x="48" y="275" width="50" height="65" fill="url(#sk-w1)"/><rect class="tw tw2" x="48" y="275" width="50" height="65" fill="url(#sk-w2)"/><rect x="102" y="213" width="32" height="157" fill="url(#sk-b2)"/><rect class="tw tw1" x="102" y="219" width="32" height="121" fill="url(#sk-w1)"/><rect class="tw tw2" x="102" y="219" width="32" height="121" fill="url(#sk-w2)"/><rect x="134" y="270" width="42" height="100" fill="url(#sk-b2)"/><rect class="tw tw1" x="134" y="276" width="42" height="64" fill="url(#sk-w1)"/><rect x="184" y="225" width="49" height="145" fill="url(#sk-b2)"/><rect class="tw tw1" x="184" y="231" width="49" height="109" fill="url(#sk-w1)"/><rect x="382" y="223" width="37" height="147" fill="url(#sk-b2)"/><rect class="tw tw1" x="382" y="229" width="37" height="111" fill="url(#sk-w1)"/><rect class="tw tw2" x="382" y="229" width="37" height="111" fill="url(#sk-w2)"/><rect x="421" y="261" width="31" height="109" fill="url(#sk-b2)"/><rect class="tw tw1" x="421" y="267" width="31" height="73" fill="url(#sk-w1)"/><rect class="tw tw2" x="421" y="267" width="31" height="73" fill="url(#sk-w2)"/><rect x="456" y="273" width="29" height="97" fill="url(#sk-b2)"/><rect class="tw tw1" x="456" y="279" width="29" height="61" fill="url(#sk-w1)"/><rect class="tw tw2" x="456" y="279" width="29" height="61" fill="url(#sk-w2)"/><rect x="642" y="215" width="49" height="155" fill="url(#sk-b2)"/><rect class="tw tw1" x="642" y="221" width="49" height="119" fill="url(#sk-w1)"/><rect class="tw tw2" x="642" y="221" width="49" height="119" fill="url(#sk-w2)"/><rect x="699" y="239" width="29" height="131" fill="url(#sk-b2)"/><rect class="tw tw1" x="699" y="245" width="29" height="95" fill="url(#sk-w1)"/><rect class="tw tw2" x="699" y="245" width="29" height="95" fill="url(#sk-w2)"/><rect x="1118" y="226" width="33" height="144" fill="url(#sk-b2)"/><rect class="tw tw1" x="1118" y="232" width="33" height="108" fill="url(#sk-w1)"/><rect class="tw tw2" x="1118" y="232" width="33" height="108" fill="url(#sk-w2)"/><rect x="1159" y="264" width="33" height="106" fill="url(#sk-b2)"/><rect class="tw tw1" x="1159" y="270" width="33" height="70" fill="url(#sk-w1)"/><rect class="tw tw2" x="1159" y="270" width="33" height="70" fill="url(#sk-w2)"/><rect x="1196" y="211" width="53" height="159" fill="url(#sk-b2)"/><rect class="tw tw1" x="1196" y="217" width="53" height="123" fill="url(#sk-w1)"/><g><ellipse cx="825" cy="200" rx="120" ry="170" fill="url(#sk-glow)" opacity=".5"/><polygon points="795.0,340.0 795.0,265.0 801.0,265.0 801.0,215.0 807.0,215.0 807.0,170.0 812.0,170.0 812.0,120.0 817.0,120.0 817.0,80.0 821.0,80.0 821.0,30.0 823.5,30.0 825.0,6.0 826.5,30.0 829.0,30.0 829.0,80.0 833.0,80.0 833.0,120.0 838.0,120.0 838.0,170.0 843.0,170.0 843.0,215.0 849.0,215.0 849.0,265.0 855.0,265.0 855.0,340.0" fill="url(#sk-gold)"/><polygon class="tw tw1" points="795.0,340.0 795.0,265.0 801.0,265.0 801.0,215.0 807.0,215.0 807.0,170.0 812.0,170.0 812.0,120.0 817.0,120.0 817.0,80.0 821.0,80.0 821.0,30.0 823.5,30.0 825.0,6.0 826.5,30.0 829.0,30.0 829.0,80.0 833.0,80.0 833.0,120.0 838.0,120.0 838.0,170.0 843.0,170.0 843.0,215.0 849.0,215.0 849.0,265.0 855.0,265.0 855.0,340.0" fill="url(#sk-w2)" opacity=".5"/><line x1="825" y1="10" x2="825" y2="340" stroke="#fff" stroke-opacity=".7" stroke-width="1.2"/><circle class="bk" cx="825" cy="8" r="3.4" fill="#ff3b3b"/><circle cx="825" cy="8" r="9" fill="#ff3b3b" opacity=".3" class="bk"/></g><g><ellipse cx="300" cy="342" rx="70" ry="6" fill="#0c0820"/><path d="M266 340 L266 190 Q280 110 318 44 L322 44 Q308 130 314 200 Q320 270 340 340 Z" fill="url(#sk-gold)"/><path d="M314 60 Q304 150 318 250" stroke="#fff" stroke-opacity=".55" stroke-width="1.2" fill="none"/><circle class="bk" cx="319" cy="44" r="2.6" fill="#7dd3ff"/></g><g><polygon points="508,340 508,120 522,90 536,120 536,340" fill="url(#sk-b3)" stroke="#ffd37a" stroke-opacity=".55"/><rect class="tw tw1" x="508" y="126" width="28" height="214" fill="url(#sk-w1)"/><circle class="bk" cx="522" cy="88" r="2.2" fill="#ff3b3b"/></g><g><polygon points="552,340 552,165 566,135 580,165 580,340" fill="url(#sk-b3)" stroke="#ffd37a" stroke-opacity=".55"/><rect class="tw tw1" x="552" y="171" width="28" height="169" fill="url(#sk-w1)"/><circle class="bk" cx="566" cy="133" r="2.2" fill="#ff3b3b"/></g><g><rect x="1000" y="175" width="14" height="165" fill="url(#sk-gold)"/><rect x="1076" y="175" width="14" height="165" fill="url(#sk-gold)"/><rect x="1000" y="175" width="90" height="16" fill="url(#sk-gold)"/><rect x="999" y="170" width="92" height="22" fill="#ffd37a" opacity=".25"/></g><rect x="-10" y="225" width="31" height="145" fill="url(#sk-b3)"/><rect class="tw tw1" x="-10" y="231" width="31" height="109" fill="url(#sk-w1)"/><rect class="tw tw2" x="-10" y="231" width="31" height="109" fill="url(#sk-w2)"/><rect x="25" y="240" width="43" height="130" fill="url(#sk-b3)"/><rect class="tw tw1" x="25" y="246" width="43" height="94" fill="url(#sk-w1)"/><rect class="tw tw2" x="25" y="246" width="43" height="94" fill="url(#sk-w2)"/><rect x="68" y="299" width="43" height="71" fill="url(#sk-b3)"/><rect class="tw tw1" x="68" y="305" width="43" height="35" fill="url(#sk-w1)"/><rect x="119" y="230" width="32" height="140" fill="url(#sk-b3)"/><rect class="tw tw1" x="119" y="236" width="32" height="104" fill="url(#sk-w1)"/><rect class="tw tw2" x="119" y="236" width="32" height="104" fill="url(#sk-w2)"/><rect x="159" y="230" width="41" height="140" fill="url(#sk-b3)"/><rect class="tw tw1" x="159" y="236" width="41" height="104" fill="url(#sk-w1)"/><rect class="tw tw2" x="159" y="236" width="41" height="104" fill="url(#sk-w2)"/><rect x="202" y="281" width="31" height="89" fill="url(#sk-b3)"/><rect class="tw tw1" x="202" y="287" width="31" height="53" fill="url(#sk-w1)"/><rect x="401" y="227" width="36" height="143" fill="url(#sk-b3)"/><rect class="tw tw1" x="401" y="233" width="36" height="107" fill="url(#sk-w1)"/><rect class="tw tw2" x="401" y="233" width="36" height="107" fill="url(#sk-w2)"/><rect x="618" y="251" width="40" height="119" fill="url(#sk-b3)"/><rect class="tw tw1" x="618" y="257" width="40" height="83" fill="url(#sk-w1)"/><rect class="tw tw2" x="618" y="257" width="40" height="83" fill="url(#sk-w2)"/><rect x="666" y="271" width="42" height="99" fill="url(#sk-b3)"/><rect class="tw tw1" x="666" y="277" width="42" height="63" fill="url(#sk-w1)"/><rect x="708" y="265" width="51" height="105" fill="url(#sk-b3)"/><rect class="tw tw1" x="708" y="271" width="51" height="69" fill="url(#sk-w1)"/><rect x="890" y="239" width="39" height="131" fill="url(#sk-b3)"/><rect class="tw tw1" x="890" y="245" width="39" height="95" fill="url(#sk-w1)"/><rect class="tw tw2" x="890" y="245" width="39" height="95" fill="url(#sk-w2)"/><rect x="1109" y="225" width="46" height="145" fill="url(#sk-b3)"/><rect class="tw tw1" x="1109" y="231" width="46" height="109" fill="url(#sk-w1)"/><rect class="tw tw2" x="1109" y="231" width="46" height="109" fill="url(#sk-w2)"/><rect x="1159" y="270" width="40" height="100" fill="url(#sk-b3)"/><rect class="tw tw1" x="1159" y="276" width="40" height="64" fill="url(#sk-w1)"/><rect x="1203" y="291" width="24" height="79" fill="url(#sk-b3)"/><rect class="tw tw1" x="1203" y="297" width="24" height="43" fill="url(#sk-w1)"/><rect class="tw tw2" x="1203" y="297" width="24" height="43" fill="url(#sk-w2)"/><rect x="0" y="340" width="1200" height="20" fill="#0c0820"/><rect x="0" y="340" width="1200" height="20" fill="url(#sk-water)"/></svg>
+    <h2 class="ext">Let's <span style="color:var(--accent-2)">make it.</span></h2>
+    <div class="rows">
+      <div class="crow"><span class="mono">Email</span><span class="val" id="v-email">shaikhharis542@gmail.com</span><button class="copy-btn" type="button" data-copy="v-email">Copy</button></div>
+      <div class="crow"><span class="mono">Phone</span><span class="val" id="v-phone">+971 50 566 2452</span><button class="copy-btn" type="button" data-copy="v-phone">Copy</button></div>
+      <div class="crow"><span class="mono">Studio</span><span class="val">Deira, Dubai, U.A.E · Serving all of the UAE</span></div>
+      <div class="crow" style="border-bottom:0;padding-top:24px"><a class="wa" href="https://wa.me/971505662452?text=Hi%20Haris%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.9 1.5 6 1.5 6.9 0 12.6-5.6 12.6-12.5S22.9 3 16 3z"/><path fill="#16a34a" d="M22.6 19.4c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2s-.4.2-.7.1c-1.9-.9-3.1-1.7-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7 2 .8 2.8.9 3.8.7.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg><span>Chat on WhatsApp · +971 50 566 2452</span></a></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V6M6 11.5l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<a class="wa wa-fab" href="https://wa.me/971505662452?text=Hi%20Haris%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Haris on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.9 1.5 6 1.5 6.9 0 12.6-5.6 12.6-12.5S22.9 3 16 3z"/><path fill="#16a34a" d="M22.6 19.4c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2s-.4.2-.7.1c-1.9-.9-3.1-1.7-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7 2 .8 2.8.9 3.8.7.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg><span class="t">Chat on WhatsApp</span></a>
+
+<div class="wrap foot-logo"><img src="img/logo-lockup.png" alt="Haris, calligraphy logo in gold" width="302" height="420" loading="lazy"></div>
+
+<footer class="wrap">
+  <span class="mono">© 2026 Haris Ali</span>
+  <span class="mono">Graphic design · Print · Web</span>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('menuBtn'), nav = document.getElementById('site-nav');
+  if (!btn || !nav) return;
+  function set(open) { nav.classList.toggle('open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); }
+  btn.addEventListener('click', function () { set(!nav.classList.contains('open')); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 900) set(false); });
+  /* Keep the hero word inside its stage whatever font is loaded */
+  function fitType() {
+    var tw = document.querySelector('.typewrap'), x = document.getElementById('type3d'), st = document.getElementById('stage');
+    if (!tw || !x || !st) return;
+    tw.style.fontSize = '';
+    var avail = st.clientWidth * 0.94, w = x.offsetWidth;
+    if (w > avail) tw.style.fontSize = (parseFloat(getComputedStyle(tw).fontSize) * avail / w).toFixed(2) + 'px';
+  }
+  fitType();
+  window.addEventListener('resize', fitType);
+  window.addEventListener('load', fitType);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitType);
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Build extruded 3D lettering from stacked layers */
+  function hex(h) { return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]; }
+  var c1 = hex('#fff1c4'), c2 = hex('#5a3d0c'), layers = [];
+  document.querySelectorAll('.x3d').forEach(function (el) {
+    var text = el.getAttribute('data-text'), n = +el.getAttribute('data-depth') || 14, step = +el.getAttribute('data-step') || 3;
+    for (var i = n; i >= 1; i--) {
+      var s = document.createElement('span');
+      s.className = 'l'; s.textContent = text; s.setAttribute('aria-hidden', 'true');
+      s.style.transform = 'translateZ(' + (-i * step) + 'px)';
+      s.setAttribute('data-t', (i / n).toFixed(3)); layers.push(s);
+      el.insertBefore(s, el.firstChild);
+    }
+  });
+  function paintLayers() {
+    var a = c1, b = c2;
+    layers.forEach(function (s) {
+      var t = +s.getAttribute('data-t');
+      s.style.color = 'rgb(' + a.map(function (v, k) { return Math.round(v + (b[k] - v) * t); }).join(',') + ')';
+    });
+  }
+  paintLayers(); window.addEventListener('themechange', paintLayers);
+
+  /* Pointer-driven scene, with a slow idle drift */
+  var stage = document.getElementById('stage'), tilt = document.getElementById('tilt');
+  var tx = 0, ty = 0, cx = 0, cy = 0, last = 0, running = false, visible = true;
+  function setPointer(e) {
+    var r = stage.getBoundingClientRect();
+    tx = Math.max(-1, Math.min(1, ((e.clientX - r.left) / r.width - .5) * 2));
+    ty = Math.max(-1, Math.min(1, ((e.clientY - r.top) / r.height - .5) * 2));
+    last = performance.now();
+  }
+  function apply() {
+    tilt.style.setProperty('--ry', (cx * 16).toFixed(2) + 'deg');
+    tilt.style.setProperty('--rx', (-cy * 9).toFixed(2) + 'deg');
+    stage.style.setProperty('--px', cx.toFixed(3));
+    stage.style.setProperty('--py', cy.toFixed(3));
+  }
+  function loop(now) {
+    if (!visible) { running = false; return; }
+    if (now - last > 2500) { tx = Math.sin(now / 2300) * .55; ty = Math.cos(now / 3100) * .25; }
+    cx += (tx - cx) * .07; cy += (ty - cy) * .07;
+    apply(); requestAnimationFrame(loop);
+  }
+  if (reduce) { cx = -.25; cy = .05; apply(); }
+  else {
+    window.addEventListener('pointermove', function (e) { if (e.clientY < stage.getBoundingClientRect().bottom + 200) setPointer(e); }, { passive: true });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (en) { visible = en[0].isIntersecting; if (visible && !running) { running = true; requestAnimationFrame(loop); } }).observe(stage);
+    }
+    running = true; requestAnimationFrame(loop);
+  }
+
+  /* Tilt cards on hover */
+  if (!reduce && window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('[data-tilt]').forEach(function (el) {
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+        el.style.setProperty('--gx', ((x + .5) * 100).toFixed(1) + '%'); el.style.setProperty('--gy', ((y + .5) * 100).toFixed(1) + '%'); el.style.transform = 'perspective(900px) rotateX(' + (-y * 14).toFixed(2) + 'deg) rotateY(' + (x * 18).toFixed(2) + 'deg) translateZ(24px) scale(1.025)';
+      });
+      el.addEventListener('pointerleave', function () { el.style.transform = ''; });
+    });
+  }
+
+  /* Website filter */
+  var chips = document.querySelectorAll('#websites .chip'), items = document.querySelectorAll('#sites .site');
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      var f = c.getAttribute('data-filter');
+      chips.forEach(function (o) { o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); });
+      items.forEach(function (li) { li.hidden = !(f === 'all' || li.getAttribute('data-p') === f); });
+    });
+  });
+
+  /* Catalogue filter */
+  var cchips = document.querySelectorAll('#catalogue .cchip'), citems = document.querySelectorAll('#pgrid .pc');
+  cchips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      var f = c.getAttribute('data-cf');
+      cchips.forEach(function (o) { o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); });
+      citems.forEach(function (li) { li.hidden = !(f === 'all' || li.getAttribute('data-c') === f); });
+    });
+  });
+
+  /* Copy buttons */
+  document.querySelectorAll('.copy-btn[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy')), t0 = b.textContent;
+      var flash = function (m) { b.textContent = m; setTimeout(function () { b.textContent = t0; }, 1400); };
+      var select = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); flash('Selected'); };
+      try { navigator.clipboard.writeText(el.textContent.trim()).then(function () { flash('Copied'); }, select); } catch (e) { select(); }
+    });
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- WebGL hero objects ---------- */
+  (function () {
+    var canvas = document.getElementById('gl'), stage = document.getElementById('stage');
+    if (!canvas || !stage) return;
+    if (!window.THREE) { canvas.style.display = 'none'; return; }
+    var renderer;
+    try { renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true }); } catch (e) { canvas.style.display = 'none'; return; }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setClearColor(0x000000, 0);
+    var scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(40, 1, .1, 100);
+    cam.position.set(0, 0, 12);
+    function matcap(a, b, c) {
+      var cv = document.createElement('canvas'); cv.width = cv.height = 256; var x = cv.getContext('2d');
+      var g = x.createRadialGradient(100, 84, 8, 128, 128, 130); g.addColorStop(0, a); g.addColorStop(.5, b); g.addColorStop(1, c);
+      x.fillStyle = g; x.fillRect(0, 0, 256, 256);
+      var h = x.createRadialGradient(88, 70, 0, 88, 70, 62); h.addColorStop(0, 'rgba(255,255,255,.95)'); h.addColorStop(1, 'rgba(255,255,255,0)');
+      x.fillStyle = h; x.fillRect(0, 0, 256, 256);
+      var r = x.createLinearGradient(0, 256, 256, 0); r.addColorStop(0, 'rgba(255,240,200,.4)'); r.addColorStop(.4, 'rgba(255,240,200,0)');
+      x.fillStyle = r; x.fillRect(0, 0, 256, 256);
+      return new THREE.CanvasTexture(cv);
+    }
+    function mat(a, b, c) { return new THREE.MeshMatcapMaterial({ matcap: matcap(a, b, c) }); }
+    var gold = mat('#fff6cf', '#e2ab3f', '#4d3206'), teal = mat('#c8fff3', '#1fb5a0', '#06352f'),
+        cyan = mat('#c9f4ff', '#00b4e6', '#00364a'), mag = mat('#ffd0e8', '#e6007e', '#4a0028'), yel = mat('#fff9c2', '#ffd400', '#5c4a00');
+    var knot = new THREE.Mesh(new THREE.TorusKnotGeometry(1.1, .36, 160, 24, 2, 3), gold);
+    var ring = new THREE.Mesh(new THREE.TorusGeometry(1, .24, 32, 96), gold);
+    var ico = new THREE.Mesh(new THREE.IcosahedronGeometry(.85, 0), teal);
+    var oct = new THREE.Mesh(new THREE.OctahedronGeometry(.6), mag);
+    var box = new THREE.Mesh(new THREE.BoxGeometry(.8, .8, .8), gold);
+    var sph = [cyan, mag, yel].map(function (m) { return new THREE.Mesh(new THREE.SphereGeometry(.34, 32, 32), m); });
+    var group = [knot, ring, ico, oct, box].concat(sph);
+    group.forEach(function (o) { scene.add(o); });
+    var N = 320, pos = new Float32Array(N * 3);
+    for (var i = 0; i < N; i++) { pos[i * 3] = (Math.random() - .5) * 20; pos[i * 3 + 1] = (Math.random() - .5) * 11; pos[i * 3 + 2] = -7 + Math.random() * 9; }
+    var geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    var pts = new THREE.Points(geo, new THREE.PointsMaterial({ size: .06, color: 0xf0cd82, transparent: true, opacity: .85, sizeAttenuation: true }));
+    scene.add(pts);
+    var sx = 1, nx = 0, ny = 0, visible = true, running = false, t0 = performance.now();
+    function size() {
+      var w = stage.clientWidth || 800, h = stage.clientHeight || 600;
+      renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix();
+      sx = Math.max(.42, Math.min(1, (w / h) / 1.5));
+      var k = Math.max(.55, sx);
+      group.forEach(function (o) { o.scale.setScalar(k); });
+    }
+    function place(t) {
+      knot.position.set(-4.3 * sx, -.7 + Math.sin(t * .9) * .35, 0); knot.rotation.set(t * .4, t * .6, 0);
+      ring.position.set(4.4 * sx, 1.4 + Math.sin(t * .7 + 1) * .3, -1); ring.rotation.set(.8 + t * .3, t * .5, 0);
+      ico.position.set(3.7 * sx, -2.3 + Math.sin(t * .8 + 2) * .25, .5); ico.rotation.set(t * .5, t * .35, 0);
+      oct.position.set(-3.4 * sx, 2.7 + Math.sin(t * .6) * .3, -1); oct.rotation.set(t * .6, t * .4, t * .2);
+      box.position.set(-1.9 * sx, -3.1, -1.5); box.rotation.set(t * .5, t * .7, 0);
+      sph.forEach(function (m, k) { var a = t * .5 + k * 2.094; m.position.set(Math.cos(a) * 5.4 * sx, Math.sin(a * 1.3) * 1.3 + .6, Math.sin(a) * 2 - 2.6); });
+      pts.rotation.y = t * .03;
+    }
+    function frame(now) {
+      if (!visible) { running = false; return; }
+      var t = (now - t0) / 1000; place(t);
+      cam.position.x += (nx * 1.2 - cam.position.x) * .05; cam.position.y += (-ny * .8 - cam.position.y) * .05; cam.lookAt(0, 0, 0);
+      renderer.render(scene, cam); requestAnimationFrame(frame);
+    }
+    size(); window.addEventListener('resize', size);
+    if (reduce) { place(1.2); renderer.render(scene, cam); return; }
+    window.addEventListener('pointermove', function (e) { nx = (e.clientX / window.innerWidth - .5) * 2; ny = (e.clientY / window.innerHeight - .5) * 2; }, { passive: true });
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { visible = en[0].isIntersecting; if (visible && !running) { running = true; requestAnimationFrame(frame); } }).observe(stage);
+    running = true; requestAnimationFrame(frame);
+  })();
+
+    /* ---------- glass cursor, trail and click glow ---------- */
+  (function () {
+    if (!window.matchMedia || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    var root = document.documentElement, reduce2 = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var cur = document.createElement('div'); cur.className = 'cur'; document.body.appendChild(cur);
+    var hue = 200, x = -100, y = -100, cx = -100, cy = -100, seen = false, lx = -100, ly = -100, live = 0, lastT = 0;
+    function setHue() { root.style.setProperty('--ch', Math.round(hue) % 360); }
+    setHue();
+    function frame() {
+      hue += .5; setHue();
+      cx += (x - cx) * .45; cy += (y - cy) * .45;
+      cur.style.transform = 'translate3d(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px,0)';
+      requestAnimationFrame(frame);
+    }
+    function trail(px, py) {
+      if (reduce2 || live > 16) return;
+      var el = document.createElement('div'); el.className = 'cur-t'; live++;
+      el.animate([{ transform: 'translate3d(' + px + 'px,' + py + 'px,0) scale(.9)', opacity: .95 }, { transform: 'translate3d(' + px + 'px,' + py + 'px,0) scale(.2)', opacity: 0 }], { duration: 750, easing: 'ease-out' }).onfinish = function () { el.remove(); live--; };
+      el.style.transform = 'translate3d(' + px + 'px,' + py + 'px,0)';
+      document.body.appendChild(el);
+    }
+    function glow() {
+      hue += 70; setHue();
+      var r = document.createElement('div'); r.className = 'cur-r';
+      var tr = 'translate3d(' + x + 'px,' + y + 'px,0) scale(';
+      r.style.transform = tr + '1)';
+      document.body.appendChild(r);
+      r.animate([{ transform: tr + '1)', opacity: 1 }, { transform: tr + (reduce2 ? 2 : 4.5) + ')', opacity: 0 }], { duration: 650, easing: 'cubic-bezier(.2,.7,.3,1)' }).onfinish = function () { r.remove(); };
+    }
+    window.addEventListener('pointermove', function (e) {
+      if (e.pointerType && e.pointerType !== 'mouse' && e.pointerType !== 'pen') return;
+      x = e.clientX; y = e.clientY;
+      if (!seen) { seen = true; cx = lx = x; cy = ly = y; root.classList.add('has-cur'); requestAnimationFrame(frame); }
+      var d = Math.hypot(x - lx, y - ly), now = performance.now();
+      if (d > 14 && now - lastT > 28) { trail(x, y); lx = x; ly = y; lastT = now; }
+      var h = e.target && e.target.closest && e.target.closest('a, button, input, label, [data-tilt], .g3d, .chip');
+      cur.classList.toggle('hot', !!h);
+    }, { passive: true });
+    window.addEventListener('pointerdown', function () { cur.classList.add('down'); glow(); });
+    window.addEventListener('pointerup', function () { cur.classList.remove('down'); });
+    document.addEventListener('mouseleave', function () { cur.style.opacity = 0; });
+    document.addEventListener('mouseenter', function () { cur.style.opacity = 1; });
+  })();
+
+  /* ---------- back to top ---------- */
+  (function () {
+    var b = document.getElementById('toTop'); if (!b) return;
+    var on = false, tick = false;
+    function chk() { tick = false; var s = (window.pageYOffset || document.documentElement.scrollTop) > 500; if (s !== on) { on = s; b.classList.toggle('show', s); } }
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(chk); } }, { passive: true });
+    b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+    chk();
+  })();
+
+  /* ---------- 3D rings (main gallery + per-section) ---------- */
+  function makeRing(box, ring, cap, prevBtn, nextBtn, srcs) {
+    var cards = [];
+    srcs.forEach(function (sh) {
+      var im = sh.querySelector('img'), c = document.createElement('div'), face = document.createElement('div'), ni = document.createElement('img');
+      face.className = 'face';
+      c.className = 'c3'; ni.src = im.currentSrc || im.src; ni.alt = ''; ni.draggable = false; ni.className = 'fg';
+      var bg = document.createElement('img'); bg.className = 'bg'; bg.src = ni.src; bg.alt = ''; bg.draggable = false; face.appendChild(bg); face.appendChild(ni); c.appendChild(face);
+      var refl = document.createElement('div'); refl.className = 'refl'; refl.setAttribute('aria-hidden', 'true');
+      var ri = document.createElement('img'); ri.src = ni.src; ri.alt = ''; ri.draggable = false; ri.loading = 'lazy';
+      refl.appendChild(ri); c.appendChild(refl);
+      (function (a, b) { function fit() { if (a.naturalWidth && a.naturalWidth / a.naturalHeight > .66) a.classList.add('contain'); else b.style.display = 'none'; } if (a.complete) fit(); else a.addEventListener('load', fit); })(ni, bg);
+      c.setAttribute('data-cap', [].map.call(sh.querySelectorAll('figcaption .mono'), function (x) { return x.textContent; }).join(' · '));
+      ring.appendChild(c); cards.push(c);
+    });
+    var tilt = 0, tiltT = 0, n = cards.length, step = 360 / n, R = 400, rot = 0, vel = 0, snap = null, dragging = false, lastX = 0, lastInt = 0, vis = true, running = false, last = 0, shown = -1;
+    function layout() {
+      var cw = window.innerWidth < 640 ? 150 : 230;
+      R = Math.round(cw / 2 / Math.tan(Math.PI / n) + 36);
+      ring.style.setProperty('--cw', cw + 'px');
+      cards.forEach(function (c, i) { c.style.transform = 'rotateY(' + (i * step) + 'deg) translateZ(' + R + 'px)'; });
+    }
+    function apply() {
+      ring.style.transform = 'translateZ(' + (-R) + 'px) rotateX(' + tilt.toFixed(2) + 'deg) rotateY(' + rot.toFixed(2) + 'deg)';
+      for (var i = 0; i < n; i++) {
+        var a = (((i * step + rot) % 360) + 360) % 360, k = (Math.cos(a * Math.PI / 180) + 1) / 2;
+        cards[i].style.setProperty('--o', (.28 + .72 * k).toFixed(2));
+        cards[i].style.transform = 'rotateY(' + (i * step) + 'deg) translateZ(' + (R + 70 * Math.pow(k, 8)).toFixed(1) + 'px)';
+      }
+      var idx = ((Math.round(-rot / step) % n) + n) % n;
+      if (idx !== shown) { shown = idx; cap.textContent = cards[idx].getAttribute('data-cap'); }
+    }
+    function frame(now) {
+      if (!vis && !dragging) { running = false; return; }
+      var dt = Math.min(.05, (now - last) / 1000); last = now;
+      tilt += (tiltT - tilt) * Math.min(1, dt * 6);
+      if (snap !== null) { rot += (snap - rot) * Math.min(1, dt * 8); if (Math.abs(snap - rot) < .05) { rot = snap; snap = null; } }
+      else if (!dragging) { rot += vel; vel *= .94; if (!reduce && now - lastInt > 2500) rot -= 7 * dt; }
+      apply(); requestAnimationFrame(frame);
+    }
+    function start() { if (!running) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
+    function go(d) { var base = snap !== null ? snap : Math.round(rot / step) * step; snap = base + d * step; lastInt = performance.now(); start(); }
+    box.addEventListener('pointerdown', function (e) { dragging = true; lastX = e.clientX; vel = 0; snap = null; box.classList.add('drag'); try { box.setPointerCapture(e.pointerId); } catch (x) {} start(); });
+    box.addEventListener('pointermove', function (e) { var bb = box.getBoundingClientRect(); tiltT = ((e.clientY - bb.top) / bb.height - .5) * -16; start(); if (!dragging) return; var dx = e.clientX - lastX; lastX = e.clientX; rot += dx * .32; vel = dx * .32; });
+    function up() { if (!dragging) return; dragging = false; box.classList.remove('drag'); lastInt = performance.now(); snap = Math.round((rot + vel * 8) / step) * step; vel = 0; }
+    box.addEventListener('pointerleave', function () { tiltT = 0; start(); });
+    box.addEventListener('pointerup', up); box.addEventListener('pointercancel', up);
+    box.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') { go(1); e.preventDefault(); } if (e.key === 'ArrowRight') { go(-1); e.preventDefault(); } });
+    prevBtn.addEventListener('click', function () { go(1); });
+    nextBtn.addEventListener('click', function () { go(-1); });
+    window.addEventListener('resize', function () { layout(); apply(); });
+    layout(); apply();
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { vis = en[0].isIntersecting; if (vis) start(); }).observe(box);
+    start();
+  }
+  (function () {
+    var box = document.getElementById('g3d'), ring = document.getElementById('g3dRing'), cap = document.getElementById('g3dCap');
+    var all = [].slice.call(document.querySelectorAll('#work .work-block:not([hidden]) .posters .sheet, .about > .sheet'));
+    if (box && ring && all.length) {
+      var booted = false;
+      var boot = function () { if (booted) return; booted = true; makeRing(box, ring, cap, document.getElementById('g3dPrev'), document.getElementById('g3dNext'), all); };
+      if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); boot(); } }, { rootMargin: '900px 0px' }); io.observe(box); } else boot();
+    }
+    [].slice.call(document.querySelectorAll('#work .work-block')).forEach(function (blk) {
+      if (blk.hasAttribute('hidden')) return; var grid = blk.querySelector('.posters'); if (!grid) return;
+      var items = [].slice.call(grid.querySelectorAll('.sheet')); if (items.length < 6) return;
+      var wrap = document.createElement('div');
+      wrap.innerHTML = '<div class="g3d sm" tabindex="0" role="group" aria-label="3D carousel. Drag or use the arrow keys to rotate."><div class="g3d-floor"></div><div class="g3d-ring"></div></div><div class="g3d-ui"><button class="g3d-btn" type="button" aria-label="Previous">&#8592;</button><span class="mono"></span><button class="g3d-btn" type="button" aria-label="Next">&#8594;</button></div>';
+      var b3 = wrap.children[0], ui = wrap.children[1];
+      grid.parentNode.insertBefore(b3, grid); grid.parentNode.insertBefore(ui, grid);
+      grid.classList.add('ringed');
+      var btns = ui.querySelectorAll('button');
+      makeRing(b3, b3.querySelector('.g3d-ring'), ui.querySelector('.mono'), btns[0], btns[1], items);
+    });
+  })();
+
+  /* ---------- Headings tilt in depth while scrolling ---------- */
+  if (!reduce) {
+    var heads = [].slice.call(document.querySelectorAll('.sec-head h2')), ticking = false;
+    function tiltHeads() {
+      ticking = false; var vh = window.innerHeight;
+      heads.forEach(function (h) {
+        var r = h.getBoundingClientRect(), p = (r.top + r.height / 2 - vh * .55) / (vh * .55);
+        p = Math.max(-1, Math.min(1, p));
+        h.style.transform = 'perspective(900px) rotateX(' + (p * 26).toFixed(1) + 'deg) translateY(' + (p * 12).toFixed(1) + 'px)';
+      });
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(tiltHeads); } }, { passive: true });
+    tiltHeads();
+  }
+})();
+</script>
+
+</body></html>
